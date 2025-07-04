@@ -1,0 +1,65 @@
+{ "workbench.colorTheme": "Visual Studio Dark"
+
+, "files.trimTrailingWhitespace": true
+
+, "editor.renderWhitespace" : "all"
+, "editor.rulers"           : [72, 80]
+, "editor.tabSize"          : 2
+, "editor.stickyTabStops"   : true
+
+, "vim.vimrc.enable"  : true
+, "vim.vimrc.path"    : "$HOME/.vimrc"
+
+, "editor.codeActionsOnSave":
+  {
+    "source.fixAll.markdownlint": "explicit"
+  }
+
+, "workbench.colorCustomizations":
+  { "terminal.background"       : "#282828"
+  , "terminal.foreground"       : "#d7d7d7"
+  , "terminal.ansiBlack"        : "#5f5f5f"
+  , "terminal.ansiRed"          : "#d75f87"
+  , "terminal.ansiGreen"        : "#87d75f"
+  , "terminal.ansiYellow"       : "#d7875f"
+  , "terminal.ansiBlue"         : "#5f5fd7"
+  , "terminal.ansiMagenta"      : "#af5fd7"
+  , "terminal.ansiCyan"         : "#5fafd7"
+  , "terminal.ansiWhite"        : "#d7d7d7"
+  , "terminal.ansiBrightBlack"  : "#1c1c1c"
+  , "terminal.ansiBrightRed"    : "#ff5f87"
+  , "terminal.ansiBrightGreen"  : "#87ff5f"
+  , "terminal.ansiBrightYellow" : "#ff875f"
+  , "terminal.ansiBrightBlue"   : "#5f5fff"
+  , "terminal.ansiBrightMagenta": "#af5fff"
+  , "terminal.ansiBrightCyan"   : "#5fafff"
+  , "terminal.ansiBrightWhite"  : "#eeeeee"
+  , "terminalCursor.background" : "#ffffff"
+  , "terminalCursor.foreground" : "#1e1e1e"
+  }
+
+, "security.workspace.trust.untrustedFiles": "open"
+, "git.ignoreMissingGitWarning" : true
+
+//______________________________________________________________________
+// Use Cygwin in Terminal
+//______________________________________________________________________
+//, "terminal.integrated.profiles.windows":
+//  { "Cygwin"  :
+//    { "path"  : "C:\\cygwin64\\bin\\bash.exe"
+//    , "args"  : ["--login"]
+//    , "env"   : {"CHERE_INVOKING": "1"}
+//    }
+//  }
+//______________________________________________________________________
+
+//, "editor.wordWrap": "wordWrapColumn"
+//, "editor.wordWrapColumn": 72
+
+//______________________________________________________________________
+// Code Runner is an extension that can run programs
+//______________________________________________________________________
+//, "code-runner.clearPreviousOutput": true
+//, "code-runner.showExecutionMessage": false
+//______________________________________________________________________
+}

@@ -1,0 +1,34 @@
+#_______________________________________________________________________
+# Theme file for Cygwin
+#
+# Designed by Rebecca Rashkin
+#_______________________________________________________________________
+
+Font                = Lucida Console
+FontHeight          = 14
+ThemeFile           =
+BellType            = 0
+BellTaskbar         = no
+CursorType          = block
+CursorColour        = #eeeeee
+
+
+BackgroundColour    = #d7d7d7
+ForegroundColour    = #1c1c1c
+
+Black               = #000000
+Red                 = #af005f
+Green               = #00af00
+Yellow              = #af5f00
+Blue                = #0000af
+Magenta             = #8700af
+Cyan                = #0087af
+White               = #afafaf
+BoldBlack           = #000000
+BoldRed             = #d7005f
+BoldGreen           = #00d700
+BoldYellow          = #d75f00
+BoldBlue            = #0000d7
+BoldMagenta         = #8700d7
+BoldCyan            = #00afd7
+BoldWhite           = #eeeeee
