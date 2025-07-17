@@ -40,13 +40,16 @@ let gui_blu = '#5f87d7' "  68 slight green
 let gui_mag = '#af5fd7' " 134 
 let gui_cya = '#5fd7af' "  79 more green 
 let gui_cya = '#5fafd7' "  74 more blue
-let gui_blk = '#1c1c1c' " 234
+let gui_blk = '#121212' " 233
 let gui_wht = '#d7d7d7' " 188
 let gui_gry = '#444444' " 238
 let gui_med = '#808080' " 244 
 
 " True black
 let gui_000 = '#000000' "  16
+let gui_lte = '#a8a8a8' " 248
+let gui_med = '#808080' " 244
+let gui_drk = '#303030' " 236
 
 "_______________________________________________________________________
 " CLI Colors            " RGB Color Code
@@ -60,24 +63,29 @@ let cli_blu = ' 68'     " #5f87d7
 let cli_mag = '134'     " #af5fd7
 let cli_cya = ' 79'     " #5fd7af more green
 let cli_cya = ' 74'     " #5fafd7 more blue
-let cli_blk = '234'     " #5f5f5f
+let cli_blk = '233'     " #5f5f5f
 let cli_wht = '188'     " #d7d7d7
-let cli_gry = '238'     " #444444
-let cli_lte = '250'     " #bcbcbc
-let cli_med = '248'     " #a8a8a8
-let cli_med = '244'     " #808080
+let cli_gry = '244'     " #808080
 
 " True black
 let cli_000 = ' 16'     " #000000
+let cli_lte = '248'     " #a8a8a8
+let cli_med = '244'     " #808080
+let cli_drk = '236'     " #303030
+
+let cli_bg_ = '234'
+let gui_bg_ = '#1c1c1c'
 
 let cli_fg_ = cli_wht
 let gui_fg_ = gui_wht
  
 "_______________________________________________________________________
+exe ':hi Normal           ctermbg ='.cli_bg_ 'guibg ='.gui_bg_
 exe ':hi Normal           ctermfg ='.cli_fg_ 'guifg ='.gui_fg_
 exe ':hi Comment          ctermfg ='.cli_med 'guifg ='.gui_gry
 exe ':hi String           ctermfg ='.cli_mag 'guifg ='.gui_cya
 
+"exe ':hi NonText          ctermfg ='.cli_mag 'guifg ='.gui_mag
 "_______________________________________________________________________
 exe ':hi Cursor           cterm   =  reverse   gui  =  reverse'
 
@@ -90,7 +98,7 @@ exe ':hi Cursor           cterm   =  reverse   gui  =  reverse'
 
 " Option none disables the line
 exe ':hi CursorLine       cterm   = none      gui   = none'
-exe ':hi CursorLine       ctermbg ='.cli_000 'guifg = '.gui_000
+exe ':hi CursorLine       ctermbg ='.cli_blk 'guifg = '.gui_blk
 
 " CursorLineNr: Sets color of curernt line
 exe ':hi CursorLineNr     cterm   = bold      gui   = bold'
@@ -113,9 +121,9 @@ exe ':hi Visual           ctermbg ='.cli_yel 'guibg ='.gui_yel
 exe ':hi Visual           ctermfg ='.cli_blk 'guifg ='.gui_blk 
 
 " Search: Highlighted text on search
-exe ':hi Search           ctermfg ='.cli_yel 'guifg ='.gui_wht
-exe ':hi Search           ctermbg ='.cli_gry 'guibg ='.gui_gry
 exe ':hi Search           cterm   =  bold       gui =  bold'
+exe ':hi Search           ctermfg ='.cli_yel 'guifg ='.gui_wht
+exe ':hi Search           ctermbg ='.cli_drk 'guibg ='.gui_drk
 
 " Todo: TODO, FIXME
 exe ':hi Todo             ctermbg ='.cli_gry 'guibg ='.gui_gry
@@ -145,8 +153,9 @@ exe ':hi Type             ctermfg ='.cli_mag 'guifg ='.gui_mag
 exe ':hi Constant         ctermfg ='.cli_grn 'guifg = '.gui_grn 
 
 " MatchParen: Crnt & matching paren when one paren is under cursor
-exe ':hi MatchParen       ctermbg ='.cli_yel 'guibg = '.gui_yel 
-exe ':hi MatchParen       ctermfg ='.cli_blk 'guifg = '.gui_blk 
+exe ':hi MatchParen       cterm   =  bold     gui   =   bold'
+exe ':hi MatchParen       ctermbg ='.cli_blu 'guibg = '.gui_blu 
+exe ':hi MatchParen       ctermfg ='.cli_yel 'guifg = '.gui_yel 
 
 " PreProc examples
 "   .cpp: #include, #define
@@ -186,13 +195,13 @@ exe ':hi StatusLine       ctermbg ='.cli_blk 'guibg ='.gui_blk
 
 " StatusLineNC: Footer for inactive (non current) window pane
 exe ':hi StatusLineNC     ctermbg ='.cli_wht 'guibg = '.gui_wht 
-exe ':hi StatusLineNC     ctermfg ='.cli_gry 'guifg = '.gui_gry 
+exe ':hi StatusLineNC     ctermfg ='.cli_drk 'guifg = '.gui_drk 
 
 exe ':hi Statuslineterm   ctermfg ='.cli_yel 'guifg = '.gui_yel 
 
 " VertSplit: Divider between window panes
 exe ':hi VertSplit        ctermbg ='.cli_cya 'guibg = '.gui_blu 
-exe ':hi VertSplit        ctermfg ='.cli_gry 'guifg = '.gui_blu
+exe ':hi VertSplit        ctermfg ='.cli_drk 'guifg = '.gui_drk
 
 "_______________________________________________________________________
 " VIM FUNCTIONALITY
@@ -210,11 +219,9 @@ exe ':hi ErrorMsg         ctermbg ='.cli_red' guifg = '.gui_red
 "_______________________________________________________________________
 " HIGHLIGHT GROUPS NOT IMPLEMENTED
 "_______________________________________________________________________
-"exe ':hi NonText          ctermfg ='.cli_mag 'guifg ='.gui_mag
 "exe ':hi EndOfBuffer      ctermfg ='.cli_blk 'guifg = '.gui_blk 
 "exe ':hi StatusLineTerm   ctermfg ='.cli_blk 'guifg = '.gui_blk 
 "exe ':hi StatusLineTermNC ctermfg ='.cli_blk 'guifg = '.gui_blk 
-"exe ':hi VertSplit        ctermfg ='.cli_blk 'guifg = '.gui_blk 
 "exe ':hi PmenuSel         ctermfg ='.cli_blk 'guifg = '.gui_blk 
 "exe ':hi Pmenu            ctermfg ='.cli_blk 'guifg = '.gui_blk 
 "exe ':hi PmenuSbar        ctermfg ='.cli_blk 'guifg = '.gui_blk 
