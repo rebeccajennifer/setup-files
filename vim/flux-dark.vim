@@ -1,7 +1,7 @@
 "_______________________________________________________________________
 " Vim color file
 " Maintainer:  Rebecca Rashkin <rebecca.jennifer.rabbit@gmail.com>
-" Last Change: 2025 Jul 04
+" Last Change: 2025 Jul 17
 "_______________________________________________________________________
 
 "_______________________________________________________________________
@@ -85,7 +85,8 @@ exe ':hi Normal           ctermfg ='.cli_fg_ 'guifg ='.gui_fg_
 exe ':hi Comment          ctermfg ='.cli_med 'guifg ='.gui_gry
 exe ':hi String           ctermfg ='.cli_mag 'guifg ='.gui_cya
 
-"exe ':hi NonText          ctermfg ='.cli_mag 'guifg ='.gui_mag
+exe ':hi NonText          ctermfg ='.cli_drk 'guifg ='.gui_drk
+
 "_______________________________________________________________________
 exe ':hi Cursor           cterm   =  reverse   gui  =  reverse'
 
@@ -96,7 +97,7 @@ exe ':hi Cursor           cterm   =  reverse   gui  =  reverse'
 " Option cursorline must be set for CursorLine* variables to take effect 
 "_______________________________________________________________________
 
-" Option none disables the line
+" Option none disables the horizontal line
 exe ':hi CursorLine       cterm   = none      gui   = none'
 exe ':hi CursorLine       ctermbg ='.cli_blk 'guifg = '.gui_blk
 
@@ -175,7 +176,7 @@ exe ':hi VimVar           ctermfg ='.cli_blu 'guifg = '.gui_blu
 exe ':hi Identifier       ctermfg ='.cli_red 'guifg = '.gui_blk 
 
 
-" PreProc examples
+" Define examples
 "   .cpp: #define
 exe ':hi Define           ctermfg ='.cli_blk 'guifg = '.gui_blk 
 
@@ -433,3 +434,4 @@ exe ':hi ErrorMsg         ctermbg ='.cli_red' guifg = '.gui_red
 " DiffDelete        : Deleted lines in a diff.
 "
 " ______________________________________________________________________
+
