@@ -10,7 +10,6 @@
 "
 " This file sources other files that include the bulk of the color
 " scheme contents (see body of file).
-"
 "_______________________________________________________________________
 "
 " To find a token's highlight group, place your cursor on it and run:
@@ -29,11 +28,11 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = 'flux-dark'
+let g:colors_name = 'flux-lite'
 
 "_______________________________________________________________________
 " File containing color definitions
-source ~/.vim/colors/flux-colors-dark.vim
+source ~/.vim/colors/flux-colors-lite.vim
 
 " File containing the highlight group configurations
 source ~/.vim/colors/flux-base.vim
