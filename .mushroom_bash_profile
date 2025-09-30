@@ -10,12 +10,19 @@
 # \A    time
 # \w    current working directory
 
-BASH_SHELL='-bash'
+BASH_SHELL_0='-bash'
+BASH_SHELL_1='bash'
 
 # $0 is current shell
-if [[ "$0" == "$BASH_SHELL" ]]; then
+if [[ "$0" == "$BASH_SHELL_0" ]]; then
   PS1='bash 🐰 ⏲ \A [\w] > '
 fi
+
+# $0 is current shell
+if [[ "$0" == "$BASH_SHELL_1" ]]; then
+  PS1='bash 🐰 ⏲ \A [\w] > '
+fi
+
 
 #_______________________________________________________________
 # SOURCE CONFIGURATIONS 
@@ -26,6 +33,7 @@ alias srz='source ~/.zshrc'
 # ARDUINO
 export MKR1000=arduino:samd:mkr1000
 export MKR1010=arduino:samd:mkrwifi1010
+export FEATHER=arduino:samd:adafruit_circuitplayground_m0
 
 export NANO_ESP32=esp32:esp32:nano32
 export NANO_ESP32=esp32:esp32:esp32c3
@@ -82,6 +90,7 @@ alias cdgr='cd $RTOS_REPO_PATH'
 
 alias gs='  git status'
 alias glo=' git log --oneline --decorate --all --graph'
+alias gitdiff='git difftool --no-symlinks --dir-diff'
 
 #_______________________________________________________________
 # OTHER SHORTCUTS
@@ -93,8 +102,17 @@ alias dsa='exit'
 alias save='export TEMP_DIR=$PWD'
 alias return=' cd $TEMP_DIR'
 
+alias ls='ls --color=auto'
 alias la='ls -lah'
 
+alias clanglib='clang++ -L/usr/lib/gcc/x86_64-linux-gnu/13'
+
+#_______________________________________________________________
+# CLANG
+#_______________________________________________________________
+
+export CLANG_LIBS=/usr/lib/gcc/x86_64-linux-gnu/13
+export ASAN_OPTIONS=halt_on_error=0
 
 #_______________________________________________________________
 # GNOME THEMES
@@ -109,3 +127,7 @@ alias show-colors='source ~/.flux-show-colors'
 if [[ "$0" == "$BASH_SHELL" ]]; then
   load-theme
 fi
+#_______________________________________________________________
+# VIM ON CLI
+#set -o vi
+#bindkey 'cx' vi-cmd-mode
