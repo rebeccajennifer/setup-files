@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+#_______________________________________________________________
+# This script displays your current color profile,
+# i.e. ANSI 16 colors.
+#_______________________________________________________________
+
+for i in {0..15}; do
+    echo -e "\033[38;5;${i}m Color ${i}\033[0m"
+done
+
