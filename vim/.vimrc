@@ -6,18 +6,14 @@
 set cursorline
 set hlsearch
 
+" Display highlight group under cursor
+nnoremap 'hg :echo synIDattr(synID(line('.'), col('.'), 1), 'name')
+
 " Edit .vimrc file
 nnoremap vimrc  :e      ~/.vimrc <cr>
 
 " Source .vimrc file while editing
 nnoremap src    :source ~/.vimrc <cr>
-
-
-" Set colorscheme
-colorscheme flux-dark
-
-" Load color scheme while editing
-nnoremap cs     :colorscheme flux-dark <cr>
 
 "_______________________________________________________________________
 " LINE WRAPPING
@@ -61,6 +57,32 @@ highlight LineNr ctermfg=8
 set formatoptions+=nrco
 
 "_______________________________________________________________________
+" CURSOR SETTINGS
+
+" t_EI normal mode
+" t_SI insert mode
+" t_SR replace mode
+
+"\e[2 q" block
+"\e[4 q" underline
+"\e[6 q" beam
+
+" Normal Mode
+if (exists('&t_EI'))
+  let &t_EI = "\e[2 q"
+endif
+
+" Insert Mode
+if (exists('&t_SI'))
+  let &t_SI = "\e[6 q"
+endif
+
+" Replace Mode
+if (exists('&t_SR'))
+  let &t_SR = "\e[4 q"
+endif
+
+"_______________________________________________________________________
 " KEYMAPS
 
 " remap :
@@ -84,10 +106,22 @@ inoremap DSA <esc> :q!
 nnoremap dsa       :q!
 nnoremap DSA       :q!
 
-
 "append a line of the next typed character below the current line.
 " inoremap Q yypv$r
 
 " make backspace behave properly
 set backspace=2
+
+
+"_______________________________________________________________________
+" COLOR SCHEME
+
+" Load color scheme while editing
+cnoremap cf     :colorscheme flux-dark <cr>
+
+" Edit color scheme
+cnoremap vf     :e ~/.vim/colors/flux-dark.vim <cr>
+
+" Set colorscheme
+colorscheme flux-dark
 
