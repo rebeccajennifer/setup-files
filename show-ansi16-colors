@@ -4,7 +4,33 @@
 # i.e. ANSI 16 colors.
 #_______________________________________________________________
 
+
+
 for i in {0..15}; do
     echo -e "\033[38;5;${i}m Color ${i}\033[0m"
 done
+
+#_______________________________________________________________________
+# Notes
+#_______________________________________________________________________
+# \033[0m resets formatting
+# {i}     color index
+# m:      end of formatting
+#
+#_______________________________________________________________________
+# Color format:
+# XX;YY;---
+#
+# XX - foreground or background
+#      38 = foreground
+#      48 = background
+# YY - color mode
+#      5 = 256 color mode
+#      2 = RGB
+#
+# Examples
+#
+# XX;2;R;G;B    38;2;255,0,0    prints forground as red
+# XX;5;ZZ       38;5;106        prints foreground as ANSI256 color 106
+#_______________________________________________________________________
 
