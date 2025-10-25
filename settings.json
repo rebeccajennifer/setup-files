@@ -15,31 +15,91 @@
     "source.fixAll.markdownlint": "explicit"
   }
 
-, "workbench.colorCustomizations":
-  { "terminal.background"       : "#282828"
-  , "terminal.foreground"       : "#d7d7d7"
-  , "terminal.ansiBlack"        : "#5f5f5f"
-  , "terminal.ansiRed"          : "#d75f87"
-  , "terminal.ansiGreen"        : "#87d75f"
-  , "terminal.ansiYellow"       : "#d7875f"
-  , "terminal.ansiBlue"         : "#5f5fd7"
-  , "terminal.ansiMagenta"      : "#af5fd7"
-  , "terminal.ansiCyan"         : "#5fafd7"
-  , "terminal.ansiWhite"        : "#d7d7d7"
-  , "terminal.ansiBrightBlack"  : "#1c1c1c"
-  , "terminal.ansiBrightRed"    : "#ff5f87"
-  , "terminal.ansiBrightGreen"  : "#87ff5f"
-  , "terminal.ansiBrightYellow" : "#ff875f"
-  , "terminal.ansiBrightBlue"   : "#5f5fff"
-  , "terminal.ansiBrightMagenta": "#af5fff"
-  , "terminal.ansiBrightCyan"   : "#5fafff"
-  , "terminal.ansiBrightWhite"  : "#eeeeee"
-  , "terminalCursor.background" : "#ffffff"
-  , "terminalCursor.foreground" : "#1e1e1e"
-  }
-
 , "security.workspace.trust.untrustedFiles": "open"
 , "git.ignoreMissingGitWarning" : true
+, "terminal.integrated.defaultProfile.linux": "zsh"
+, "terminal.integrated.profiles.linux":
+  { "bash":
+    { "path": "/bin/bash"
+    }
+  , "zsh":
+    { "path": "/usr/bin/zsh"
+    }
+  }
+
+, "terminal.integrated.minimumContrastRatio": 1
+
+, "workbench.colorCustomizations":
+  { "terminal.background"       : "#1c1c1c"
+  , "terminal.foreground"       : "#afafaf"
+  , "terminal.ansiBlack"        : "#121212"
+  , "terminal.ansiRed"          : "#d75f87"
+  , "terminal.ansiGreen"        : "#87af5f"
+  , "terminal.ansiYellow"       : "#ff875f"
+  , "terminal.ansiBlue"         : "#5f87d7"
+  , "terminal.ansiMagenta"      : "#af5fd7"
+  , "terminal.ansiCyan"         : "#5fafaf"
+  , "terminal.ansiWhite"        : "#afafaf"
+  , "terminal.ansiBrightBlack"  : "#000000"
+  , "terminal.ansiBrightRed"    : "#d787af"
+  , "terminal.ansiBrightGreen"  : "#afd787"
+  , "terminal.ansiBrightYellow" : "#d7af87"
+  , "terminal.ansiBrightBlue"   : "#87afd7"
+  , "terminal.ansiBrightMagenta": "#d787d7"
+  , "terminal.ansiBrightCyan"   : "#5fd7d7"
+  , "terminal.ansiBrightWhite"  : "#d7d7d7"
+  }
+
+, "editor.tokenColorCustomizations":
+  { "textMateRules":
+    [ { "scope": "comment"                           , "settings": { "foreground": "#878787" } }
+    , { "scope": "constant.character"                , "settings": { "foreground": "#8787d7" } }
+    , { "scope": "constant.character.escape"         , "settings": { "foreground": "#ffd787" } }
+    , { "scope": "constant.language"                 , "settings": { "foreground": "#ffd787" } }
+    , { "scope": "constant.numeric"                  , "settings": { "foreground": "#d787af" } }
+  
+    , { "scope": "entity.name.function"              , "settings": { "foreground": "#afd787" } }
+    , { "scope": "entity.name.function.preprocessor" , "settings": { "foreground": "#87afd7" } }
+    , { "scope": "entity.name.operator"              , "settings": { "foreground": "#87d7d7" } }
+    , { "scope": "entity.name.scope-resolution"      , "settings": { "foreground": "#87d7d7" } }
+    , { "scope": "entity.name.type"                  , "settings": { "foreground": "#87d7d7" } }
+    , { "scope": "entity.other.attribute-name"       , "settings": { "foreground": "#87d7d7" } }
+    , { "scope": "entity.other.inherited-class"      , "settings": { "foreground": "#87d7d7" } }
+    , { "scope": "invalid"                           , "settings": { "foreground": "#ff87af" } }
+    , { "scope": "keyword"                           , "settings": { "foreground": "#87afd7" } }
+    , { "scope": "keyword.control"                   , "settings": { "foreground": "#ff87af" } }
+    , { "scope": "keyword.operator"                  , "settings": { "foreground": "#afd787" } }
+    , { "scope": "keyword.operator.delete"           , "settings": { "foreground": "#d787af" } }
+    , { "scope": "keyword.operator.cast"             , "settings": { "foreground": "#af87d7" } }
+    , { "scope": "keyword.operator.logical.python"   , "settings": { "foreground": "#87d7d7" } }
+    , { "scope": "keyword.other.operator"            , "settings": { "foreground": "#af87d7" } }
+    , { "scope": "keyword.other.unit"                , "settings": { "foreground": "#afd787" } }
+    , { "scope": "keyword.other.using"               , "settings": { "foreground": "#af87d7" } }
+  
+    , { "scope": "markup.fenced_code.block.markdown" , "settings": { "foreground": "#87afd7" } }
+    , { "scope": "markup.inline.raw"                 , "settings": { "foreground": "#5fafaf" } }
+    , { "scope": "markup.heading"                    , "settings": { "foreground": "#d787af" } }
+    , { "scope": "heading.1.markdown"                , "settings": { "foreground": "#d787af" } }
+    , { "scope": "heading.2.markdown"                , "settings": { "foreground": "#ffd787" } }
+    , { "scope": "heading.3.markdown"                , "settings": { "foreground": "#afd787" } }
+    , { "scope": "heading.4.markdown"                , "settings": { "foreground": "#87d7d7" } }
+    , { "scope": "meta.separator.markdown"           , "settings": { "foreground": "#5fafaf" } }
+  
+    , { "scope": "string"                            , "settings": { "foreground": "#5fafaf" } }
+    , { "scope": "support.function"                  , "settings": { "foreground": "#afd787" } }
+    , { "scope": "support.type"                      , "settings": { "foreground": "#87d7d7" } }
+    , { "scope": "support.type.property-name"        , "settings": { "foreground": "#d787af" } }
+    , { "scope": "support.variable"                  , "settings": { "foreground": "#87afd7" } }
+  
+    , { "scope": "storage.type"                      , "settings": { "foreground": "#87afd7" } }
+    , { "scope": "storage.modifier"                  , "settings": { "foreground": "#d787af" } }
+  
+    , { "scope": "variable"                          , "settings": { "foreground": "#87afd7" } }
+    , { "scope": "variable.language"                 , "settings": { "foreground": "#87afd7" } }
+    , { "scope": "variable.other.enummember"         , "settings": { "foreground": "#87d7d7" } }
+    ]
+  }
+}
 
 //______________________________________________________________________
 // Use Cygwin in Terminal
@@ -62,4 +122,3 @@
 //, "code-runner.clearPreviousOutput": true
 //, "code-runner.showExecutionMessage": false
 //______________________________________________________________________
-}
