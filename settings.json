@@ -1,11 +1,20 @@
 { "workbench.colorTheme": "Visual Studio Dark"
 
+, "code-runner.clearPreviousOutput"   : true
+, "code-runner.showExecutionMessage"  : false
+
+, "code-runner.executorMap":
+  { "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  }
+
+
 , "files.trimTrailingWhitespace": true
 
-, "editor.renderWhitespace" : "all"
-, "editor.rulers"           : [72, 80]
-, "editor.tabSize"          : 2
-, "editor.stickyTabStops"   : true
+, "editor.renderWhitespace"         : "all"
+, "editor.renderControlCharacters"  : "all"
+, "editor.rulers"                   : [72, 80]
+, "editor.tabSize"                  : 2
+, "editor.stickyTabStops"           : true
 
 , "vim.vimrc.enable"  : true
 , "vim.vimrc.path"    : "$HOME/.vimrc"
@@ -15,9 +24,15 @@
     "source.fixAll.markdownlint": "explicit"
   }
 
+, "file.associations":
+  { "*.ada"     : "ada"
+  , "*.gpr"     : "ada"
+  , "*makefile" : "makefile"
+  }
+
 , "security.workspace.trust.untrustedFiles": "open"
 , "git.ignoreMissingGitWarning" : true
-, "terminal.integrated.defaultProfile.linux": "zsh"
+
 , "terminal.integrated.profiles.linux":
   { "bash":
     { "path": "/bin/bash"
@@ -26,28 +41,28 @@
     { "path": "/usr/bin/zsh"
     }
   }
+, "terminal.integrated.defaultProfile.linux": "zsh"
 
 , "terminal.integrated.minimumContrastRatio": 1
-
-, "workbench.colorCustomizations":
-  { "terminal.background"       : "#1c1c1c"
-  , "terminal.foreground"       : "#afafaf"
-  , "terminal.ansiBlack"        : "#121212"
-  , "terminal.ansiRed"          : "#d75f87"
-  , "terminal.ansiGreen"        : "#87af5f"
-  , "terminal.ansiYellow"       : "#ff875f"
-  , "terminal.ansiBlue"         : "#5f87d7"
-  , "terminal.ansiMagenta"      : "#af5fd7"
-  , "terminal.ansiCyan"         : "#5fafaf"
-  , "terminal.ansiWhite"        : "#afafaf"
-  , "terminal.ansiBrightBlack"  : "#000000"
-  , "terminal.ansiBrightRed"    : "#d787af"
-  , "terminal.ansiBrightGreen"  : "#afd787"
-  , "terminal.ansiBrightYellow" : "#d7af87"
-  , "terminal.ansiBrightBlue"   : "#87afd7"
-  , "terminal.ansiBrightMagenta": "#d787d7"
-  , "terminal.ansiBrightCyan"   : "#5fd7d7"
-  , "terminal.ansiBrightWhite"  : "#d7d7d7"
+, "workbench.colorCustomizations" :
+  { "terminal.background"         : "#1c1c1c"
+  , "terminal.foreground"         : "#afafaf"
+  , "terminal.ansiBlack"          : "#121212"
+  , "terminal.ansiRed"            : "#d75f87"
+  , "terminal.ansiGreen"          : "#87af5f"
+  , "terminal.ansiYellow"         : "#ff875f"
+  , "terminal.ansiBlue"           : "#5f87d7"
+  , "terminal.ansiMagenta"        : "#af5fd7"
+  , "terminal.ansiCyan"           : "#5fafaf"
+  , "terminal.ansiWhite"          : "#afafaf"
+  , "terminal.ansiBrightBlack"    : "#000000"
+  , "terminal.ansiBrightRed"      : "#d787af"
+  , "terminal.ansiBrightGreen"    : "#afd787"
+  , "terminal.ansiBrightYellow"   : "#d7af87"
+  , "terminal.ansiBrightBlue"     : "#87afd7"
+  , "terminal.ansiBrightMagenta"  : "#d787d7"
+  , "terminal.ansiBrightCyan"     : "#5fd7d7"
+  , "terminal.ansiBrightWhite"    : "#d7d7d7"
   }
 
 , "editor.tokenColorCustomizations":
@@ -57,7 +72,7 @@
     , { "scope": "constant.character.escape"         , "settings": { "foreground": "#ffd787" } }
     , { "scope": "constant.language"                 , "settings": { "foreground": "#ffd787" } }
     , { "scope": "constant.numeric"                  , "settings": { "foreground": "#d787af" } }
-  
+
     , { "scope": "entity.name.function"              , "settings": { "foreground": "#afd787" } }
     , { "scope": "entity.name.function.preprocessor" , "settings": { "foreground": "#87afd7" } }
     , { "scope": "entity.name.operator"              , "settings": { "foreground": "#87d7d7" } }
@@ -75,7 +90,7 @@
     , { "scope": "keyword.other.operator"            , "settings": { "foreground": "#af87d7" } }
     , { "scope": "keyword.other.unit"                , "settings": { "foreground": "#afd787" } }
     , { "scope": "keyword.other.using"               , "settings": { "foreground": "#af87d7" } }
-  
+
     , { "scope": "markup.fenced_code.block.markdown" , "settings": { "foreground": "#87afd7" } }
     , { "scope": "markup.inline.raw"                 , "settings": { "foreground": "#5fafaf" } }
     , { "scope": "markup.heading"                    , "settings": { "foreground": "#d787af" } }
@@ -84,22 +99,21 @@
     , { "scope": "heading.3.markdown"                , "settings": { "foreground": "#afd787" } }
     , { "scope": "heading.4.markdown"                , "settings": { "foreground": "#87d7d7" } }
     , { "scope": "meta.separator.markdown"           , "settings": { "foreground": "#5fafaf" } }
-  
+
     , { "scope": "string"                            , "settings": { "foreground": "#5fafaf" } }
     , { "scope": "support.function"                  , "settings": { "foreground": "#afd787" } }
     , { "scope": "support.type"                      , "settings": { "foreground": "#87d7d7" } }
     , { "scope": "support.type.property-name"        , "settings": { "foreground": "#d787af" } }
     , { "scope": "support.variable"                  , "settings": { "foreground": "#87afd7" } }
-  
+
     , { "scope": "storage.type"                      , "settings": { "foreground": "#87afd7" } }
     , { "scope": "storage.modifier"                  , "settings": { "foreground": "#d787af" } }
-  
+
     , { "scope": "variable"                          , "settings": { "foreground": "#87afd7" } }
     , { "scope": "variable.language"                 , "settings": { "foreground": "#87afd7" } }
     , { "scope": "variable.other.enummember"         , "settings": { "foreground": "#87d7d7" } }
     ]
   }
-}
 
 //______________________________________________________________________
 // Use Cygwin in Terminal
@@ -116,9 +130,4 @@
 //, "editor.wordWrap": "wordWrapColumn"
 //, "editor.wordWrapColumn": 72
 
-//______________________________________________________________________
-// Code Runner is an extension that can run programs
-//______________________________________________________________________
-//, "code-runner.clearPreviousOutput": true
-//, "code-runner.showExecutionMessage": false
-//______________________________________________________________________
+}
