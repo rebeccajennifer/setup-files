@@ -1,6 +1,6 @@
 #_______________________________________________________________________
 # .bash_profile
-# 
+#
 # This file contains aliases and environment variables.
 #_______________________________________________________________________
 
@@ -10,12 +10,12 @@ alias src='source ~/.bash_profile'
 # LS_COLORS
 #_______________________________________________________________________
 
-# Reset LS_COLORS completely based on values
+# Allows you to reset LS COLORS completely based on values
 # loaded in the dircolors command
 unset LS_COLORS
 
 # Load custom color scheme
-# Assumes ~/.dircolors-flux contains updated color mapping for file types
+# Assumes ~/.dircolors-flux contains color mapping for file types
 if [[ -f ~/.dircolors-flux ]]; then
   eval `dircolors -b ~/.dircolors-flux`
 fi
