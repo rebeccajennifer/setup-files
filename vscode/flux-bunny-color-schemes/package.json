@@ -1,5 +1,5 @@
-{ "name"          : "flux-dark-pastel"
-, "displayName"   : "Flux Dark Pastel"
+{ "name"          : "lagomorphic-constructs-theme-pack"
+, "displayName"   : "Lagomorphic Constructs Theme Pack"
 , "publisher"     : "Rebecca Jennifer"
 , "version"       : "0.0.1"
 , "engines"       : { "vscode": "*" }
@@ -9,6 +9,10 @@
     [ { "label"   : "Flux Dark Pastel"
       , "uiTheme" : "vs-dark"
       , "path"    : "./flux-dark-pastel.json"
+      }
+    , { "label"   : "Flux Dark Bright"
+      , "uiTheme" : "vs-dark"
+      , "path"    : "./flux-dark-bright.json"
       }
     ]
   }
