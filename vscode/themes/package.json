@@ -1,0 +1,16 @@
+{ "name"          : "flux-dark-pastel"
+, "displayName"   : "Flux Dark Pastel"
+, "publisher"     : "Rebecca Jennifer"
+, "version"       : "0.0.1"
+, "engines"       : { "vscode": "*" }
+, "contributes"   :
+
+  { "themes"      :
+    [ { "label"   : "Flux Dark Pastel"
+      , "uiTheme" : "vs-dark"
+      , "path"    : "./flux-dark-pastel.json"
+      }
+    ]
+  }
+}
+
