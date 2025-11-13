@@ -1,0 +1,275 @@
+{
+  "$schema"     : "vscode://schemas/color-theme"
+, "name"        : "Flux Bunny Dark"
+, "type"        : "dark"
+
+, "colors":
+  { "editor.background"                 : "#262626"
+  , "editor.foreground"                 : "#d7d7d7"
+
+  , "terminal.background"               : "#262626"
+  , "terminal.foreground"               : "#afafaf"
+
+  , "terminal.ansiBrightBlack"          : "#121212"
+  , "terminal.ansiBrightRed"            : "#d75f87"
+  , "terminal.ansiBrightGreen"          : "#87af5f"
+  , "terminal.ansiBrightYellow"         : "#ff875f"
+  , "terminal.ansiBrightBlue"           : "#00afd7"
+  , "terminal.ansiBrightMagenta"        : "#af5faf"
+  , "terminal.ansiBrightCyan"           : "#5fafaf"
+  , "terminal.ansiBrightWhite"          : "#afafaf"
+
+  , "terminal.ansiBlack"                : "#000000"
+  , "terminal.ansiRed"                  : "#d787af"
+  , "terminal.ansiGreen"                : "#afd787"
+  , "terminal.ansiYellow"               : "#d7af87"
+  , "terminal.ansiBlue"                 : "#87afd7"
+  , "terminal.ansiMagenta"              : "#d787d7"
+  , "terminal.ansiCyan"                 : "#5fd7d7"
+  , "terminal.ansiWhite"                : "#d7d7d7"
+
+  , "editorBracketHighlight.foreground2"                  : "#008787"
+  , "editorBracketHighlight.foreground3"                  : "#87af5f"
+  , "editorBracketHighlight.foreground1"                  : "#d75faf"
+  , "editorBracketHighlight.unexpectedBracket.foreground" : "#ff5f87"
+  }
+
+, "tokenColors":
+  [ {}
+
+  , { "name"  : "Color 7: White"
+    , "scope": [ ""
+      , "source"
+      , "text.html" // Comment specifier
+      , "variable.parameter"
+      , ""
+      ], "settings": { "foreground": "#c0c0c0" }
+  }
+
+  , { "name"  : "Color 15: Bright White"
+    , "scope": [ ""
+      , "punctuation"
+      , "keyword.control.ternary" // Java - : in Circle: "circle"
+      , ""
+      ], "settings": { "foreground": "#d7d7d7" }
+    }
+
+  , { "name"  : "Color 1: Pink"
+    , "scope" : [ ""
+      , "entity.name.function.preprocessor"
+      , "entity.name.operator"
+      , "heading.1.markdown"
+      , "heading.1.quarto"
+      , "keyword.control"               // switch, case, break, if, for
+      , "keyword.other.directive.using" // using a = float
+      , "keyword.other.operator"
+      , "keyword.other.using"
+      , "punctuation.definition.constant" // # in #ff0000
+      , ""
+      ] , "settings": { "foreground": "#d787af" }
+    }
+
+  , { "name"  : "Color 9: Bright Pink"
+    , "scope" : [ ""
+      , "invalid"
+      , ""
+      ], "settings": { "foreground": "#ff5f87" }
+    }
+
+  , { "name"  : "Color 2: Green"
+    , "scope" : [ ""
+      , "keyword.operator"
+      , "heading.3.markdown"
+      , "heading.3.quarto"
+      , "meta.function-call"
+      , "punctuation.definition.link.description"
+      , "punctuation.separator.key-value"             // class="value"
+      ]
+    , "settings": { "foreground": "#afd787" }
+    }
+
+  , { "name"  : "Color 10: Dark Green"
+    , "scope" : [ ""
+      , "constant.character.escape"                   // \n in "\n"
+      , "constant.other.placeholder"                  // %02X in string
+      , "keyword.control.directive"
+      , "keyword.control.import"
+      , "keyword.other.export"
+      , "keyword.other.import"
+      , "storage.type.modifier"                     // public
+      , ""
+      ]
+    , "settings": { "foreground": "#87af5f"}
+    }
+
+  , { "name"  : "Color 3: Orange"
+    , "scope" : [ ""
+      , "constant.language"
+      , "heading.2.markdown"
+      , "heading.2.quarto"
+      , "keyword"
+      , "keyword.operator.cast"                       // static_cast
+      , "keyword.operator.delete"
+      , "keyword.operator.new"
+      , "meta.separator"
+      , "storage.modifier"                            // const, static
+
+      , "meta.function.definition"
+      , ""
+      , ""
+      ], "settings": { "foreground": "#ffaf87"}
+    }
+
+  , { "name": "Color 11: Yellow"
+    , "scope": [""
+      , "support.function"
+      ], "settings": { "foreground": "#ffd787" }
+    }
+
+ , { "name"  : "Color 4: Blue"
+    , "scope" : [ ""
+      , "entity.name.variable"
+      , "heading.4.markdown"
+      , "heading.4.quarto"
+      , "meta.function-call"
+      , "meta.member.access.python"
+      , "markup.list.numbered"
+      , "variable.other.object"
+      , ""
+      ], "settings": { "foreground": "#87afd7"}
+    }
+
+  , { "name"  : "Color 12: Bright Blue"
+    , "scope" : [ ""
+      , "constant.other.placeholder"
+      , "entity.name.tag"
+      , "entity.name.type.parameter"
+      , "markup.underline.link.image"
+      , "meta.definition.variable.name"
+      , "meta.method.return-type"
+      , "support.type"
+      , "storage.type.built-in"                     // int
+      , "storage.type.function"                     // def in python
+      , "storage.type.primitive"                    // int
+      , "storage.type.template.argument.typename"   // public
+      , "support.variable"
+      , ""
+      ], "settings": { "foreground": "#00afd7" }
+    }
+
+  , { "name"  : "Color 5: Violet"
+    , "scope": [ ""
+      , "entity.name.scope-resolution"
+      , "heading.5.markdown"
+      , "heading.5.quarto"
+      , "meta.function-call"
+      , "storage.type.class"
+      , "storage.type.enum"
+      , "storage.type.namespace.definition"
+      , "storage.type.struct"
+      , "storage.type.template"
+      , "storage.type.enum.enum-key.class.cpp"
+      , "variable.language.special.self"          // python
+      , "variable.language.this"                  // java
+      , "variable.other.constant"
+      , "entity.name.namespace"
+      , "keyword.control.import.shortcode"
+      , ""
+      ], "settings": { "foreground": "#af87d7" }
+    }
+
+  , { "name"  : "Color 13: Dark Violet"
+    , "scope" : [ ""
+      , "constant.numeric"
+      , "constant.other.color.rgb-value"
+      , "constant.other.rgb-value"
+      , "string"
+      , ""
+      ], "settings": { "foreground": "#af5faf"}
+    }
+
+  , { "name"  : "Color 6: Cyan"
+    , "scope" : [ ""
+      , "entity.name.type"
+      , "entity.other"
+      ]
+    , "settings": { "foreground": "#87d7af" }
+    }
+
+  , { "name"  : "Color 14: Dark Cyan"
+    , "scope" : [ ""
+      , "entity.name.function"
+      , "entity.name.operator.custom-literal"
+      , "keyword.other.unit"
+      , "support.type.property-name"
+      , "variable.other.property" // b in a.b
+      ], "settings": { "foreground": "#5fafaf" }
+    }
+
+  , { "name"  : "Color 0: Dark Grey"
+    , "scope": [ ""
+      , "comment"
+      , "punctuation.definition.comment" // Comment specifier e.g. //
+      , ""
+      ], "settings": { "foreground": "#6c6c6c" }
+    }
+
+  , { "name"  : "CSS property value"
+    , "scope" : [ ""
+      , "support.constant.property-value"
+      , "support.constant.font-name"
+      , "support.constant.media-type"
+      , "support.constant.media"
+      , "support.constant.color"
+      ]
+    , "settings": { "foreground": "#00afd7" }
+    }
+
+  , { "name"  : "Regular expression groups"
+    , "scope" : [ ""
+      , "punctuation.definition.group.regexp"
+      , "punctuation.definition.group.assertion.regexp"
+      , "punctuation.definition.character-class.regexp"
+      , "punctuation.character.set.begin.regexp"
+      , "punctuation.character.set.end.regexp"
+      , "keyword.operator.negation.regexp"
+      , "support.other.parenthesis.regexp"
+      ]
+    , "settings": { "foreground": "#d75fd7" }
+    }
+
+  , { "scope": [
+        "constant.character.character-class.regexp"
+      , "constant.other.character-class.set.regexp"
+      , "constant.other.character-class.regexp"
+      , "constant.character.set.regexp"
+      ]
+    , "settings": { "foreground": "#d787af" }
+    }
+
+  , { "scope": [
+        "keyword.operator.or.regexp"
+      , "keyword.control.anchor.regexp"
+      ]
+    , "settings": { "foreground": "#DCDCAA" }
+    }
+
+  , { "scope": "keyword.operator.quantifier.regexp"
+    , "settings": { "foreground": "#d7ba7d" }
+    }
+
+  ]
+
+  // These properties override tokenColors
+, "semanticTokenColors":
+  { //"variable"      : "#87afd7"
+  //, "property"      : "#87afd7" // Class member variables
+  //, "parameter"     : "#87afd7" // Function parameters
+  //, "enumMember"    : "#87afd7" // Class member variables
+  //, "macro"         : "#d7d7d7" // PI in #define PI
+  //, "type"          : "#87d7d7" // Don't set this
+  }
+
+
+}
+

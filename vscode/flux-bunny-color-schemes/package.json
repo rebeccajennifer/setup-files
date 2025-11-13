@@ -6,13 +6,9 @@
 , "contributes"   :
 
   { "themes"      :
-    [ { "label"   : "Flux Bunny Dark Pastel"
+    [ { "label"   : "Flux Bunny Dark"
       , "uiTheme" : "vs-dark"
-      , "path"    : "./flux-bunny-dark-pastel.json"
-      }
-    , { "label"   : "Flux Bunny Dark Bright"
-      , "uiTheme" : "vs-dark"
-      , "path"    : "./flux-bunny-dark-bright.json"
+      , "path"    : "./flux-bunny-dark.json"
       }
     ]
   }
