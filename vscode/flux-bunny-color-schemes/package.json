@@ -1,18 +1,18 @@
 { "name"          : "lagomorphic-constructs-theme-pack"
 , "displayName"   : "Lagomorphic Constructs Theme Pack"
-, "publisher"     : "Rebecca Jennifer"
+, "publisher"     : "RebeccaJennifer"
 , "version"       : "0.0.1"
 , "engines"       : { "vscode": "*" }
 , "contributes"   :
 
   { "themes"      :
-    [ { "label"   : "Flux Bunny Dark Pastel"
+    [ { "label"   : "Flux Bunny Dark"
       , "uiTheme" : "vs-dark"
-      , "path"    : "./flux-bunny-dark-pastel.json"
+      , "path"    : "./flux-bunny-dark.json"
       }
-    , { "label"   : "Flux Bunny Dark Bright"
-      , "uiTheme" : "vs-dark"
-      , "path"    : "./flux-bunny-dark-bright.json"
+    , { "label"   : "Flux Bunny Lite"
+      , "uiTheme" : "vs"
+      , "path"    : "./flux-bunny-lite.json"
       }
     ]
   }
