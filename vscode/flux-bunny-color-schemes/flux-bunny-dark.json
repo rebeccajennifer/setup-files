@@ -1,21 +1,27 @@
 {
   "$schema"     : "vscode://schemas/color-theme"
-, "name"        : "Flux Bunny Dark"
-, "type"        : "dark"
+, "name"        : "Flux Bunny Lite"
 
 , "colors":
   { "foreground"                                          : "#c6c6c6"
-  , "selection.background"                                : "#af87d7"
+  , "selection.background"                                : "#875faf"
   , "errorForeground"                                     : "#ff5f87"
   , "focusBorder"                                         : "#005f5f"
   //, "window.activeBorder"                                 : "#005f5f"
   , "widget.border"                                       : "#00875f"
 
+
   , "editor.background"                                   : "#262626"
   , "editor.foreground"                                   : "#c6c6c6"
+  , "editorCursor.background"                             : "#c6c6c6"
+  , "editorCursor.foreground"                             : "#00875f"
+  , "editor.selectionBackground"                          : "#005f875f"
+  , "editor.wordHighlightTextBackground"                  : "#875faf5f"
 
   , "terminal.background"                                 : "#303030"
-  , "terminal.foreground"                                 : "#d7d7d7"
+  , "terminal.foreground"                                 : "#afafaf"
+  , "terminalCursor.background"                           : "#c6c6c6"
+  , "terminalCursor.foreground"                           : "#00875f"
 
   , "terminal.ansiBrightBlack"                            : "#121212"
   , "terminal.ansiBrightRed"                              : "#d75f87"
@@ -46,8 +52,13 @@
   , "editorLineNumber.activeForeground"                   : "#afd787"
   , "editorLineNumber.foreground"                         : "#878787"
 
+  , "dropdown.background"                                 : "#303030"
+  , "dropdown.foreground"                                 : "#c6c6c6"
+  , "dropdown.border"                                     : "#afd787"
+  , "dropdown.listBackground"                             : "#303030"
+
   , "tab.activeBackground"                                : "#262626"
-  , "tab.activeForeground"                                : "#d7d7d7"
+  , "tab.activeForeground"                                : "#afafaf"
   , "tab.inactiveBackground"                              : "#303030"
   , "tab.inactiveForeground"                              : "#c6c6c6"
   , "tab.unfocusedActiveForeground"                       : "#5fafaf"
@@ -63,7 +74,7 @@
 
   , "panel.background"                                    : "#303030"
   , "panel.border"                                        : "#afd787"
-  , "panelTitle.activeForeground"                         : "#d7d7d7"
+  , "panelTitle.activeForeground"                         : "#afafaf"
   , "panelTitle.inactiveForeground"                       : "#c6c6c6"
   , "panelTitle.border"                                   : "#262626"
   //, "panelSectionHeader.background"                       : "#afd787"
@@ -74,7 +85,7 @@
   , "statusBar.debuggingBackground"                       : "#875faf"
   , "statusBarItem.remoteBackground"                      : "#005f87"
 
-  , "banner.background"                                   : "#ffd787"
+  //, "banner.background"                                   : "#ffd787"
 
   , "list.activeSelectionBackground"                      : "#005f5f"
   , "list.activeSelectionForeground"                      : "#c6c6c6"
@@ -87,7 +98,7 @@
   , "list.highlightForeground"                            : "#afd787"
   , "list.focusBackground"                                : "#005f87"
 
-  , "button.background"                                   : "#005f5f"
+  , "button.background"                                   : "#00875f"
   , "button.foreground"                                   : "#c6c6c6"
 
   , "debugIcon.breakpointForeground"                      : "#ff5f87"
@@ -104,7 +115,7 @@
 
   , "gitDecoration.addedResourceForeground"               : "#87af5f"
   , "gitDecoration.modifiedResourceForeground"            : "#ffaf87"
-  , "gitDecoration.untrackedResourceForeground"           : "#87af5f"
+  , "gitDecoration.untrackedResourceForeground"           : "#afd787"
 
   , "scmGraph.foreground1"                                : "#ffaf87"
   , "scmGraph.historyItemBaseRefColor"                    : "#d75f87"
@@ -198,7 +209,7 @@
     , "scope": [ ""
       , "keyword.control.ternary" // Java - : in Circle: "circle"
       , ""
-      ], "settings": { "foreground": "#d7d7d7" }
+      ], "settings": { "foreground": "#afafaf" }
     }
 
   , { "name"  : "Color 1: Pink"
