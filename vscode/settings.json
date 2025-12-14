@@ -1,82 +1,93 @@
-{
+{ "workbench.colorTheme"                            : "Flux Bunny Dark"
+
+, "security.workspace.trust.untrustedFiles"         : "open"
+
+, "git.openRepositoryInParentFolders"               : "never"
+, "git.ignoreMissingGitWarning"                     : true
+, "explorer.confirmDragAndDrop"                     : false
+
+, "files.trimTrailingWhitespace"                    : true
+, "editor.renderWhitespace"                         : "all"
+, "editor.renderControlCharacters"                  : true
+, "editor.rulers"                                   : [72, 80]
+, "editor.tabSize"                                  : 2
+, "editor.detectIndentation"                        : false
+, "editor.stickyTabStops"                           : true
+
 //______________________________________________________________________
-// To use these color schemes, you must copy the
-// Lagomorphic Constructs Color Theme Pack to
-// ~/.vscode/extensions/
+// WORD WRAP
 //______________________________________________________________________
-  "workbench.colorTheme": "Flux Bunny Dark Pastel"
-//  "workbench.colorTheme": "Flux Bunny Dark Bright"
+, "editor.wordWrap"                                 : "off"
+//, "editor.wordWrap"                                 : "wordWrapColumn"
+, "editor.wordWrapColumn"                           : 72
+, "[quarto]":
+  { "editor.wordWrap"                               : "on"
+  , "editor.wordWrapColumn"                         : 72
+  , "editor.tabSize"                                : 2
+  }
+
+, "[css]":
+  { "editor.wordWrap"                               : "on"
+  , "editor.wordWrapColumn"                         : 72
+  , "editor.tabSize"                                : 2
+  }
+
 //______________________________________________________________________
+// VIM
+//______________________________________________________________________
+, "vim.vimrc.enable"                                : true
+, "vim.vimrc.path"                                  : "$HOME/.vimrc"
+, "vim.cursorStylePerMode":
+  { "insert"                                        : "line"
+  , "normal"                                        : "block"
+  , "visual"                                        : "underline"
+  }
+, "editor.cursorBlinking"                           : "solid"
 
-, "security.workspace.trust.untrustedFiles" : "open"
-, "git.ignoreMissingGitWarning"             : true
-
-, "files.trimTrailingWhitespace"    : true
-, "editor.renderWhitespace"         : "all"
-, "editor.renderControlCharacters"  : true
-, "editor.rulers"                   : [72, 80]
-, "editor.tabSize"                  : 2
-, "editor.stickyTabStops"           : true
-
-, "vim.vimrc.enable"  : true
-, "vim.vimrc.path"    : "$HOME/.vimrc"
-
+//______________________________________________________________________
 , "editor.codeActionsOnSave":
   {
-    "source.fixAll.markdownlint": "explicit"
+    "source.fixAll.markdownlint"                    : "explicit"
   }
 
 , "file.associations":
-  { "*.ada"     : "ada"
-  , "*.gpr"     : "ada"
-  , "*makefile" : "makefile"
+  { "*.ada"                                         : "ada"
+  , "*.gpr"                                         : "ada"
+  , "*makefile"                                     : "makefile"
   }
 
-//______________________________________________________________________
 , "terminal.integrated.profiles.linux":
   { "bash":
-    { "path": "/bin/bash"
+    { "path"                                        : "/bin/bash"
     }
   , "zsh":
-    { "path": "/usr/bin/zsh"
+    { "path"                                        : "/usr/bin/zsh"
     }
   }
-, "terminal.integrated.defaultProfile.linux": "zsh"
-//______________________________________________________________________
+, "terminal.integrated.defaultProfile.linux"        : "zsh"
+, "terminal.integrated.suggest.enabled"             : false
+, "terminal.integrated.minimumContrastRatio"        : 1
 
-, "terminal.integrated.minimumContrastRatio": 1
+//______________________________________________________________________
+// COPILOT
+//______________________________________________________________________
 , "github.copilot.enable":
-  { "*": false
-  , "plaintext": false
-  , "markdown": false
-  , "scminput": false
+  { "*"         : true
+  , "quarto"    : false
+  , "plaintext" : false
+  , "markdown"  : false
+  , "scminput"  : false
   }
+
 //______________________________________________________________________
-// Use Cygwin in Terminal
+// CODE RUNNER
 //______________________________________________________________________
-//, "terminal.integrated.profiles.windows":
-//  { "Cygwin"  :
-//    { "path"  : "C:\\cygwin64\\bin\\bash.exe"
-//    , "args"  : ["--login"]
-//    , "env"   : {"CHERE_INVOKING": "1"}
-//    }
-//  }
-//______________________________________________________________________
-//______________________________________________________________________
-// Code Runner extension settings
-//______________________________________________________________________
-, "code-runner.clearPreviousOutput"   : true
-, "code-runner.showExecutionMessage"  : false
+, "code-runner.clearPreviousOutput"                 : true
+, "code-runner.showExecutionMessage"                : false
 
 , "code-runner.executorMap":
   { "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
-  }
-//______________________________________________________________________
+  },
+  "explorer.confirmDelete": false
 
-//______________________________________________________________________
-// Settings you might want to toggle
-//______________________________________________________________________
-//, "editor.wordWrap": "wordWrapColumn"
-//, "editor.wordWrapColumn": 72
-//______________________________________________________________________
 }
