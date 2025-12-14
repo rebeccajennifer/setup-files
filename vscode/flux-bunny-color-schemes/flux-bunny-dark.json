@@ -18,7 +18,11 @@
   // HIGHLIGHTING AND SELECTION
   //____________________________________________________________________
   , "editor.wordHighlightTextBackground"                  : "#875faf5f"
+  , "editor.wordHighlightBackground"                      : "#303030af"
   , "editor.lineHighlightBackground"                      : "#1c1c1c"
+
+  , "editorLineNumber.activeForeground"                   : "#afd787"
+  , "editorLineNumber.foreground"                         : "#878787"
 
   //____________________________________________________________________
   // TERMINAL
@@ -55,11 +59,8 @@
   , "editorBracketHighlight.unexpectedBracket.foreground" : "#ff5f87"
 
   //____________________________________________________________________
-  // BRACKETS
+  // DROPDOWN
   //____________________________________________________________________
-  , "editor.wordHighlightBackground"                      : "#303030af"
-  , "editorLineNumber.activeForeground"                   : "#afd787"
-  , "editorLineNumber.foreground"                         : "#878787"
 
   , "dropdown.background"                                 : "#303030"
   , "dropdown.foreground"                                 : "#c6c6c6"
@@ -81,7 +82,7 @@
   //____________________________________________________________________
   , "panel.background"                                    : "#303030"
   , "panel.border"                                        : "#303030"
-  , "panelTitle.activeForeground"                         : "#FG__BOLD"
+  , "panelTitle.activeForeground"                         : "#bcbcbc"
   , "panelTitle.inactiveForeground"                       : "#c6c6c6"
   , "panelTitle.border"                                   : "#262626"
   //, "panelSectionHeader.background"                       : "#afd787"
@@ -97,10 +98,12 @@
   //____________________________________________________________________
   // ACTIVITY BAR (LEFT OF WINDOW)
   //____________________________________________________________________
+  , "activityBar.foreground"                              : "#bcbcbc"
   , "activityBar.background"                              : "#1c1c1c"
   , "activityBar.activeBackground"                        : "#005f5f"
   , "activityBarBadge.background"                         : "#afd787"
   , "activityBarBadge.foreground"                         : "#1c1c1c"
+  , "icon.foreground"                                     : "#878787"
 
   //____________________________________________________________________
   // SIDEBAR (PROJECT EXLPORER, ETC)
@@ -287,7 +290,7 @@
     , "scope": [ ""
       , "keyword.control.ternary" // Java - : in Circle: "circle"
       , ""
-      ], "settings": { "foreground": "#FG__BOLD" }
+      ], "settings": { "foreground": "#bcbcbc" }
     }
 
   , { "name"  : "Color 1: Pink"
@@ -390,6 +393,7 @@
       , "markup.underline.link.image"
       , "meta.definition.variable.name"
       , "meta.method.return-type"
+      , "support.constant.color"                    // red
       , "support.constant.property-value"           // css none
       , "support.type"
       , "storage.type.built-in"                     // int
@@ -454,14 +458,13 @@
       , "comment"
       , "punctuation.definition.comment" // Comment specifier e.g. //
       , ""
-      ], "settings": { "foreground": "#6c6c6c" }
+      ], "settings": { "foreground": "#878787" }
     }
 
   , { "name"  : "CSS property value"
     , "scope" : [ ""
       , "support.constant.media-type"
       , "support.constant.media"
-      , "support.constant.color"
       ]
     , "settings": { "foreground": "#00afd7" }
     }
