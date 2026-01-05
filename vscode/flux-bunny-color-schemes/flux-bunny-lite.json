@@ -2,35 +2,14 @@
   "$schema"     : "vscode://schemas/color-theme"
 
 , "colors":
-  { "foreground"                                          : "#262626"
-  , "selection.background"                                : "#af87d7"
-  , "errorForeground"                                     : "#d75f87"
-  , "focusBorder"                                         : "#87d7d7"
-
-  , "editor.background"                                   : "#e4e4e4"
-  , "editor.foreground"                                   : "#262626"
-  , "editorCursor.background"                             : "#262626"
-  , "editorCursor.foreground"                             : "#afd787"
-  , "editor.selectionBackground"                          : "#00afd75f"
-  , "editorRuler.foreground"                              : "#eeeeee"
-
-  //____________________________________________________________________
-  // HIGHLIGHTING AND SELECTION
-  //____________________________________________________________________
-  , "editor.wordHighlightTextBackground"                  : "#af87d75f"
-  , "editor.wordHighlightBackground"                      : "#eeeeeeaf"
-  , "editor.lineHighlightBackground"                      : "#dadada"
-
-  , "editorLineNumber.activeForeground"                   : "#008700"
-  , "editorLineNumber.foreground"                         : "#878787"
-
+  {
   //____________________________________________________________________
   // TERMINAL
   //____________________________________________________________________
-  , "terminal.background"                                 : "#e4e4e4"
+    "terminal.background"                                 : "#e4e4e4"
   , "terminal.foreground"                                 : "#262626"
-  , "terminalCursor.background"                           : "#262626"
-  , "terminalCursor.foreground"                           : "#afd787"
+  , "terminalCursor.background"                           : "#e4e4e4"
+  , "terminalCursor.foreground"                           : "#008700"
   //____________________________________________________________________
   , "terminal.ansiBlack"                                  : "#121212"
   , "terminal.ansiRed"                                    : "#af005f"
@@ -42,7 +21,7 @@
   , "terminal.ansiWhite"                                  : "#878787"
   //____________________________________________________________________
   , "terminal.ansiBrightBlack"                            : "#262626"
-  , "terminal.ansiBrightRed"                              : "#d7005f"
+  , "terminal.ansiBrightRed"                              : "#d75f87"
   , "terminal.ansiBrightGreen"                            : "#0087af"
   , "terminal.ansiBrightYellow"                           : "#d78700"
   , "terminal.ansiBrightBlue"                             : "#005faf"
@@ -51,97 +30,153 @@
   , "terminal.ansiBrightWhite"                            : "#afafaf"
 
   //____________________________________________________________________
+  , "foreground"                                          : "#262626"
+  , "selection.background"                                : "#875f875f"
+  , "errorForeground"                                     : "#d75f87"
+  , "focusBorder"                                         : "#875f875f"
+
+  , "editor.background"                                   : "#e4e4e4"
+  , "editor.foreground"                                   : "#262626"
+  , "editorCursor.background"                             : "#e4e4e4"
+  , "editorCursor.foreground"                             : "#008700"
+  , "editor.selectionBackground"                          : "#005faf5f"
+  , "editor.selectionForeground"                          : "#e4e4e4"
+  , "editorRuler.foreground"                              : "#2626260f"
+
+  , "menu.background"                                     : "#dadada"
+  , "textLink.foreground"                                 : "#005faf"
+  , "textLink.activeForeground"                           : "#005f5f"
+  //____________________________________________________________________
+  // HIGHLIGHTING AND SELECTION
+  //____________________________________________________________________
+  , "editor.wordHighlightTextBackground"                  : "#875f875f"
+  , "editor.wordHighlightBackground"                      : "#2626260f"
+  , "editor.lineHighlightBackground"                      : "#dadada"
+
+  , "editorLineNumber.activeForeground"                   : "#008700"
+  , "editorLineNumber.foreground"                         : "#262626"
+
+  , "editor.findMatchHighlightBackground"                 : "#005faf7f"
+
+  //____________________________________________________________________
+  // PEEK VIEW - Displayed with right-click and "Go to *"
+  //____________________________________________________________________
+  , "peekViewEditor.background"                           : "#005faf5f"
+  , "peekViewEditor.matchHighlightBackground"             : "#875f875f"
+  , "peekViewResult.matchHighlightBackground"             : "#875f875f"
+  , "peekView.border"                                     : "#005f5f5f"
+  , "peekViewTitleLabel.foreground"                       : "#262626"
+  , "peekViewResult.fileForeground"                       : "#262626"
+  , "peekViewResult.selectionBackground"                  : "#005f5f5f"
+  , "peekViewResult.selectionForeground"                  : "#262626"
+
+  // Peek View line number background
+  //, "peekViewEditorGutter.background"                     :"#2626260f"
+
+  //____________________________________________________________________
   // BRACKETS
   //____________________________________________________________________
   , "editorBracketHighlight.foreground1"                  : "#0087af"
   , "editorBracketHighlight.foreground3"                  : "#005f5f"
-  , "editorBracketHighlight.foreground2"                  : "#d7005f"
+  , "editorBracketHighlight.foreground2"                  : "#af005f"
   , "editorBracketHighlight.unexpectedBracket.foreground" : "#d75f87"
 
   //____________________________________________________________________
   // DROPDOWN
   //____________________________________________________________________
-
-  , "dropdown.background"                                 : "#eeeeee"
+  , "dropdown.background"                                 : "#2626260f"
   , "dropdown.foreground"                                 : "#262626"
-  , "dropdown.border"                                     : "#eeeeee"
-  , "dropdown.listBackground"                             : "#eeeeee"
+  , "dropdown.border"                                     : "#2626260f"
+  , "dropdown.listBackground"                             : "#e4e4e4"
 
   //____________________________________________________________________
   // TABS
   //____________________________________________________________________
   , "tab.activeBackground"                                : "#e4e4e4"
   , "tab.activeForeground"                                : "#262626"
-  , "tab.inactiveBackground"                              : "#eeeeee"
-  , "tab.inactiveForeground"                              : "#878787"
-  , "tab.unfocusedActiveForeground"                       : "#00afd7"
-  , "tab.unfocusedInactiveForeground"                     : "#878787"
+  , "tab.inactiveBackground"                              : "#2626260f"
+  , "tab.inactiveForeground"                              : "#2626267f"
+  , "tab.unfocusedActiveForeground"                       : "#005faf7f"
+  , "tab.unfocusedInactiveForeground"                     : "#262626"
 
   //____________________________________________________________________
   // PANELS
   //____________________________________________________________________
-  , "panel.background"                                    : "#eeeeee"
-  , "panel.border"                                        : "#eeeeee"
-  , "panelTitle.activeForeground"                         : "#303030"
+  , "panel.background"                                    : "#2626260f"
+  , "panel.border"                                        : "#2626260f"
+  , "panelTitle.activeForeground"                         : "#262626"
   , "panelTitle.inactiveForeground"                       : "#262626"
-  , "panelTitle.border"                                   : "#e4e4e4"
+  //, "panelTitle.border"                                   : "#e4e4e4"
   //, "panelSectionHeader.background"                       : "#008700"
   //, "panelTitleBadge.foreground"                          : "#e4e4e4"
 
   //____________________________________________________________________
   // STATUS BAR (BOTTOM OF WINDOW)
   //____________________________________________________________________
-  , "statusBar.background"                                : "#00afd7"
+  , "statusBar.background"                                : "#005faf7f"
+  , "statusBar.background"                                : "#005faf"
   , "statusBar.foreground"                                : "#262626"
-  , "statusBarItem.remoteBackground"                      : "#00afd7"
+  , "statusBar.foreground"                                : "#e4e4e4"
+  , "statusBarItem.remoteBackground"                      : "#005faf7f"
+  , "statusBar.noFolderBackground"                        : "#875f87"
+
+  , "statusBarItem.warningBackground"                     : "#d78700"
+  , "statusBarItem.warningForeground"                     : "#e4e4e4"
+  , "statusBarItem.errorBackground"                       : "#d75f87"
+  , "statusBarItem.errorForeground"                       : "#e4e4e4"
 
   //____________________________________________________________________
   // ACTIVITY BAR (LEFT OF WINDOW)
   //____________________________________________________________________
-  , "activityBar.foreground"                              : "#303030"
+  , "activityBar.foreground"                              : "#262626ef"
   , "activityBar.background"                              : "#dadada"
-  , "activityBar.activeBackground"                        : "#87d7d7"
+  , "activityBar.activeBackground"                        : "#875f875f"
   , "activityBarBadge.background"                         : "#008700"
   , "activityBarBadge.foreground"                         : "#dadada"
-  , "icon.foreground"                                     : "#878787"
+  , "icon.foreground"                                     : "#262626"
 
   //____________________________________________________________________
   // SIDEBAR (PROJECT EXLPORER, ETC)
   //____________________________________________________________________
   , "sideBar.background"                                  : "#e4e4e4"
   , "sideBar.foreground"                                  : "#262626"
-  , "sideBar.border"                                      : "#eeeeee"
+  , "sideBar.border"                                      : "#2626260f"
   , "sideBarTitle.background"                             : "#e4e4e4"
   , "sideBarTitle.foreground"                             : "#262626"
-  , "sideBarSectionHeader.background"                     : "#eeeeee"
+  , "sideBarSectionHeader.background"                     : "#2626260f"
   , "sideBarSectionHeader.foreground"                     : "#262626"
 
-  , "list.activeSelectionBackground"                      : "#87d7d7"
+  , "list.activeSelectionBackground"                      : "#875f875f"
   , "list.activeSelectionForeground"                      : "#262626"
-  , "list.inactiveSelectionBackground"                    : "#eeeeee"
-  , "list.inactiveSelectionForeground"                    : "#00afd7"
+  , "list.inactiveSelectionBackground"                    : "#2626260f"
+  , "list.inactiveSelectionForeground"                    : "#005faf7f"
 
-  , "list.hoverBackground"                                : "#eeeeee"
-  , "list.hoverForeground"                                : "#262626"
+  , "list.hoverBackground"                                : "#2626260f"
 
   // Drag and drop files
-  , "list.dropBackground"                                 : "#afd787"
-  , "list.dropBetweenBackground"                          : "#afd787"
+  , "list.dropBackground"                                 : "#0087af"
+  , "list.dropBetweenBackground"                          : "#0087af"
 
   , "list.highlightForeground"                            : "#008700"
-  , "list.focusBackground"                                : "#00afd7"
+  , "list.focusBackground"                                : "#005faf7f"
+  , "list.invalidItemForeground"                          : "#d75f87"
 
   //____________________________________________________________________
   // BUTTONS
   //____________________________________________________________________
-  , "button.background"                                   : "#eeeeee"
-  , "button.foreground"                                   : "#262626"
-  , "button.hoverBackground"                              : "#87d7d7"
+  , "button.background"                                   : "#008700"
+  , "button.foreground"                                   : "#e4e4e4"
+  , "button.hoverBackground"                              : "#875f87"
 
   //____________________________________________________________________
   // DEBUG
   //____________________________________________________________________
+
+  // Breakpoint dot
   , "debugIcon.breakpointForeground"                      : "#d75f87"
+  // Breakpoint arrow when stopped
+  , "debugIcon.breakpointCurrentStackframeForeground"     : "#d78700"
+
   , "debugIcon.startForeground"                           : "#008700"
   , "debugIcon.stopForeground"                            : "#af005f"
   , "debugIcon.stepIntoForeground"                        : "#005f87"
@@ -150,11 +185,19 @@
   , "debugIcon.continueForeground"                        : "#870087"
   , "debugIcon.pauseForeground"                           : "#870087"
   , "debugIcon.restartForeground"                         : "#008787"
-  , "editor.inlineValuesBackground"                       : "#eeeeee"
+  , "editor.inlineValuesBackground"                       : "#2626260f"
   , "editor.inlineValuesForeground"                       : "#d75f00"
-  , "editor.stackFrameHighlightBackground"                : "#eeeeee"
-  , "statusBar.debuggingBackground"                       : "#ff875f"
+  , "editor.stackFrameHighlightBackground"                : "#2626260f"
+  , "statusBar.debuggingBackground"                       : "#d75f00"
   , "statusBar.debuggingForeground"                       : "#e4e4e4"
+
+  // Debug exception
+  , "debugExceptionWidget.border"                         : "#d75f87"
+  , "debugExceptionWidget.background"                     : "#d75f875f"
+
+  , "debugConsole.infoForeground"                         : "#005f87"
+  //, "debugConsole.sourceForeground"                       : "#008700"
+  //, "debugConsoleInputIcon.foreground"                    : "#008700"
 
   //____________________________________________________________________
   // SOURCE CONTROL
@@ -164,18 +207,23 @@
   , "gitDecoration.untrackedResourceForeground"           : "#870087"
   , "gitDecoration.deletedResourceForeground"             : "#d75f87"
 
+  , "editorGutter.addedBackground"                        : "#008700"
+  , "editorGutter.modifiedBackground"                     : "#d75f00"
+  , "editorGutter.deletedBackground"                      : "#d75f87"
+
   , "scmGraph.foreground1"                                : "#d75f00"
-  , "scmGraph.historyItemBaseRefColor"                    : "#d7005f"
+  , "scmGraph.historyItemBaseRefColor"                    : "#af005f"
   , "scmGraph.historyItemRefColor"                        : "#005f5f"
-  , "scmGraph.historyItemRemoteRefColor"                  : "#d7005f"
-  , "diffEditor.insertedLineBackground"                   : "#afd7875f"
-  , "diffEditor.removedLineBackground"                    : "#d75f875f"
+  , "scmGraph.historyItemRemoteRefColor"                  : "#af005f"
+  , "scmGraph.historyItemHoverLabelForeground"            : "#e4e4e4"
 
-  , "diffEditor.insertedTextBackground"                   : "#afd7875f"
-  , "diffEditor.removedTextBackground"                    : "#af5f875f"
+  , "diffEditor.insertedLineBackground"                   : "#0087af1f"
+  , "diffEditor.insertedTextBackground"                   : "#0087af5f"
 
-  //, "scmGraph.historyItemHoverDefaultLabelBackground"     : "#afd787"
-  //, "scmGraph.historyItemHoverDefaultLabelForeground"     : "#262626"
+  , "diffEditor.removedLineBackground"                    : "#d75f871f"
+  , "diffEditor.removedTextBackground"                    : "#d75f875f"
+
+  //, "scmGraph.historyItemHoverDefaultLabelBackground"     : "#0087af"
   //, "scmGraph.foreground2"                                : "#af005f"
   //, "scmGraph.foreground3"                                : "#af005f"
   //, "scmGraph.foreground4"                                : "#af005f"
@@ -184,10 +232,10 @@
   //____________________________________________________________________
   // MINIMAP
   //____________________________________________________________________
-  , "minimap.background"                                  : "#eeeeee"
+  , "minimap.background"                                  : "#2626260f"
+  , "minimapGutter.addedBackground"                       : "#008700"
   , "minimapGutter.deletedBackground"                     : "#d75f87"
   , "minimapGutter.modifiedBackground"                    : "#d75f00"
-  , "minimapGutter.addedBackground"                       : "#008700"
 
   //____________________________________________________________________
   // ERRORS AND WARNINGS
@@ -212,6 +260,12 @@
   , "problemsErrorIcon.foreground"                        : "#d75f87"
   , "problemsWarningIcon.foreground"                      : "#d75f00"
   , "problemsInfoIcon.foreground"                         : "#d75f00"
+  , "debugConsole.errorForeground"                        : "#d75f87"
+  , "debugConsole.warningForeground"                      : "#d75f00"
+
+  , "disabledForeground"                                  : "#2626267f"
+  , "list.deemphasizedForeground"                         : "#2626267f"
+
 
   //____________________________________________________________________
   // ICONS
@@ -255,10 +309,6 @@
   //____________________________________________________________________
   // MISC
   //____________________________________________________________________
-  //, "checkbox.background"                                 : "#87d7d7"
-  , "settings.checkboxBackground"                           : "#87d7d7"
-  , "checkbox.selectBackground"                             : "#afd787"
-  //, "banner.background"                                   : "#d78700"
 
   }
 
@@ -290,7 +340,7 @@
     , "scope": [ ""
       , "keyword.control.ternary" // Java - : in Circle: "circle"
       , ""
-      ], "settings": { "foreground": "#303030" }
+      ], "settings": { "foreground": "#008700" }
     }
 
   , { "name"  : "Color 1: Pink"
@@ -458,7 +508,7 @@
       , "comment"
       , "punctuation.definition.comment" // Comment specifier e.g. //
       , ""
-      ], "settings": { "foreground": "#878787" }
+      ], "settings": { "foreground": "#262626" }
     }
 
   , { "name"  : "CSS property value"
@@ -503,7 +553,5 @@
   //, "macro"         : "#afafaf" // PI in #define PI
   //, "type"          : "#005f87 "// Don't set this
   }
-
-
 }
 

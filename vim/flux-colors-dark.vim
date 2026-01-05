@@ -2,21 +2,25 @@
 " This file is included with the flux-dark color scheme
 "_______________________________________________________________________
 
-
 "_______________________________________________________________________
 " Unused Colors
 "_______________________________________________________________________
+"let cli_cya = ' 74'       " #5fafd7
+"let gui_cya = '#5fafd7' "  74
+
+"let cli_grn = '107'       " #87d75f
+"let gui_grn = '#87af5f' " 107
 
 "_______________________________________________________________________
 " GUI Colors            " ANSI 256 Color Index
 "_______________________________________________________________________
 
 let gui_red = '#d75f87' " 168
-let gui_grn = '#87af5f' " 107
+let gui_grn = '#87d75f' " 107
 let gui_yel = '#ff875f' " 209
 let gui_blu = '#5f87d7' "  68
 let gui_mag = '#af5fd7' " 134
-let gui_cya = '#5fafaf' "  74
+let gui_cya = '#5fafaf' "  73
 let gui_blk = '#121212' " 233
 let gui_wht = '#afafaf' " 145
 let gui_gry = '#444444' " 238
@@ -34,11 +38,11 @@ let gui_drk = '#303030' " 236
 " CLI Colors            " RGB Color Code
 "_______________________________________________________________________
 let cli_red = '168'     " #d75f87
-let cli_grn = '107'     " #87d75f
+let cli_grn = '113'     " #87af5f
 let cli_yel = '209'     " #ff875f
 let cli_blu = ' 68'     " #5f87d7
 let cli_mag = '134'     " #af5fd7
-let cli_cya = ' 74'     " #5fafd7
+let cli_cya = ' 73'     " #5fafaf
 let cli_blk = '233'     " #121212
 let cli_wht = '145'     " #afafaf
 let cli_gry = '244'     " #808080

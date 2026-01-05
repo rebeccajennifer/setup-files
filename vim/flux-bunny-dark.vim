@@ -29,7 +29,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = 'flux-dark'
+let g:colors_name = 'flux-bunny-dark'
 
 "_______________________________________________________________________
 " File containing color definitions
