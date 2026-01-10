@@ -1,93 +1,124 @@
-{ "workbench.colorTheme"                            : "Flux Bunny Dark"
-
-, "security.workspace.trust.untrustedFiles"         : "open"
-
-, "git.openRepositoryInParentFolders"               : "never"
-, "git.ignoreMissingGitWarning"                     : true
-, "explorer.confirmDragAndDrop"                     : false
-
-, "files.trimTrailingWhitespace"                    : true
-, "editor.renderWhitespace"                         : "all"
-, "editor.renderControlCharacters"                  : true
-, "editor.rulers"                                   : [72, 80]
-, "editor.tabSize"                                  : 2
-, "editor.detectIndentation"                        : false
-, "editor.stickyTabStops"                           : true
+{ "workbench.colorTheme"                          : "Flux Bunny Dark"
+, "security.workspace.trust.untrustedFiles"       : "open"
+, "git.openRepositoryInParentFolders"             : "never"
+, "git.ignoreMissingGitWarning"                   : true
+, "explorer.confirmDragAndDrop"                   : false
+, "files.trimTrailingWhitespace"                  : true
+, "editor.renderWhitespace"                       : "all"
+, "editor.renderControlCharacters"                : true
+, "editor.rulers"                                 : [72, 80]
+, "editor.tabSize"                                : 2
+, "editor.detectIndentation"                      : false
+, "editor.stickyTabStops"                         : true
 
 //______________________________________________________________________
 // WORD WRAP
 //______________________________________________________________________
-, "editor.wordWrap"                                 : "off"
-//, "editor.wordWrap"                                 : "wordWrapColumn"
-, "editor.wordWrapColumn"                           : 72
-, "[quarto]":
-  { "editor.wordWrap"                               : "on"
-  , "editor.wordWrapColumn"                         : 72
-  , "editor.tabSize"                                : 2
-  }
+, "editor.wordWrap"                               : "off"
+//, "editor.wordWrap"                             : "wordWrapColumn"
 
-, "[css]":
-  { "editor.wordWrap"                               : "on"
-  , "editor.wordWrapColumn"                         : 72
-  , "editor.tabSize"                                : 2
+, "editor.wordWrapColumn"                         : 72
+, "[quarto]"                                      :
+  { "editor.wordWrap"                             : "on"
+  , "editor.wordWrapColumn"                       : 72
+  , "editor.tabSize"                              : 2
+  }
+, "[css]"                                         :
+  { "editor.wordWrap"                             : "off"
+  , "editor.wordWrapColumn"                       : 72
+  , "editor.tabSize"                              : 2
   }
 
 //______________________________________________________________________
 // VIM
 //______________________________________________________________________
-, "vim.vimrc.enable"                                : true
-, "vim.vimrc.path"                                  : "$HOME/.vimrc"
-, "vim.cursorStylePerMode":
-  { "insert"                                        : "line"
-  , "normal"                                        : "block"
-  , "visual"                                        : "underline"
+, "vim.vimrc.enable"                              : true
+, "vim.vimrc.path"                                : "$HOME/.vimrc"
+, "vim.cursorStylePerMode"                        :
+  { "insert"                                      : "line"
+  , "normal"                                      : "block"
+  , "visual"                                      : "underline"
   }
-, "editor.cursorBlinking"                           : "solid"
 
+, "editor.cursorBlinking"                         : "solid"
 //______________________________________________________________________
-, "editor.codeActionsOnSave":
-  {
-    "source.fixAll.markdownlint"                    : "explicit"
-  }
 
-, "file.associations":
-  { "*.ada"                                         : "ada"
-  , "*.gpr"                                         : "ada"
-  , "*makefile"                                     : "makefile"
+, "editor.codeActionsOnSave"                      :
+  { "source.fixAll.markdownlint"                  : "explicit"
   }
-
-, "terminal.integrated.profiles.linux":
-  { "bash":
-    { "path"                                        : "/bin/bash"
-    }
-  , "zsh":
-    { "path"                                        : "/usr/bin/zsh"
-    }
+, "markdown.styles"                               :
+  [  "flux-bunny-style.css"
+]
+, "file.associations"                             :
+  { "*.ada"                                       : "ada"
+  , "*.gpr"                                       : "ada"
+  , "*makefile"                                   : "makefile"
   }
-, "terminal.integrated.defaultProfile.linux"        : "zsh"
-, "terminal.integrated.suggest.enabled"             : false
-, "terminal.integrated.minimumContrastRatio"        : 1
-
+, "terminal.integrated.profiles.linux"            :
+  { "bash": { "path": "/bin/bash" }
+  , "zsh" : { "path": "/usr/bin/zsh"}
+  }
+, "terminal.integrated.defaultProfile.linux"      : "zsh"
+, "terminal.integrated.suggest.enabled"           : false
+, "terminal.integrated.minimumContrastRatio"      : 1
 //______________________________________________________________________
 // COPILOT
 //______________________________________________________________________
-, "github.copilot.enable":
-  { "*"         : true
-  , "quarto"    : false
-  , "plaintext" : false
-  , "markdown"  : false
-  , "scminput"  : false
-  }
 
+, "github.copilot.enable"                         :
+  { "quarto"                                      : false
+  , "*"                                           : true
+  , "plaintext"                                   : false
+  , "markdown"                                    : false
+  , "scminput"                                    : false
+  , "json"                                        : true
+  }
 //______________________________________________________________________
 // CODE RUNNER
 //______________________________________________________________________
-, "code-runner.clearPreviousOutput"                 : true
-, "code-runner.showExecutionMessage"                : false
 
-, "code-runner.executorMap":
-  { "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
-  },
-  "explorer.confirmDelete": false
+, "code-runner.clearPreviousOutput"               : true
+, "code-runner.showExecutionMessage"              : false
+, "code-runner.executorMap"                       :
+  { "cpp"                                         : "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  }
+, "explorer.confirmDelete"                        : false
+, "diffEditor.renderSideBySide"                   : true
+, "git.confirmSync"                               : false
+//______________________________________________________________________
+// QNX
+//______________________________________________________________________
 
+, "qnx.sdpPath"                                   : "/home/flux/qnx800"
+, "qnx.targets.defaultTarget"                     : "qemu-qnx800-x86_64"
+, "qnx.arch"                                      : "x86_64"
+, "C_Cpp.default.cppStandard"                     : "gnu++17"
+, "C_Cpp.default.cStandard"                       : "gnu11"
+, "C_Cpp.default.intelliSenseMode"                : "linux-gcc-x64"
+, "C_Cpp.default.systemIncludePath"               :
+  [
+    "/home/flux/qnx800/target/qnx/usr/include",
+    "/home/flux/qnx800/target/qnx/usr/include/c++/v1"
+  ]
+, "C_Cpp.default.compilerPath"                    : "/home/flux/qnx800/host/linux/x86_64/usr/bin/ntox86_64-g++"
+, "C_Cpp.default.defines"                         :
+  [
+    "__X86_64__",
+    "__QNXNTO__=1",
+    "_QNX_SOURCE"
+  ]
+, "qnx.config.defaultProjectsRoot"                : "${userHome}/qnx-projects"
+, "qnx.targets.list":
+  [
+    {
+      "name": "qemu-qnx800-x86_64",
+      "address": "192.168.122.156",
+      "port": "8000",
+      "arch": "x86_64",
+      "path": "/home/flux/qnx-projects/targets/qemu-qnx800-x86_64",
+      "vmtype": "qemu",
+      "vmoptions": "--ssh-ident=/home/flux/.ssh/id_ed25519.pub",
+      "configScope": 1
+    }
+  ]
 }
