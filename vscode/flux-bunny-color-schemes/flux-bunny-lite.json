@@ -57,6 +57,15 @@
   , "terminal.ansiBrightCyan"                             : "#005f5f"
   , "terminal.ansiBrightWhite"                            : "#afafaf"
 
+  , "terminal.ansiBrightBlack"                            : "#878787"
+  , "terminal.ansiBrightRed"                              : "#d75f87"
+  , "terminal.ansiBrightGreen"                            : "#0087af"
+  , "terminal.ansiBrightYellow"                           : "#d78700"
+  , "terminal.ansiBrightBlue"                             : "#005faf"
+  , "terminal.ansiBrightMagenta"                          : "#875f87"
+  , "terminal.ansiBrightCyan"                             : "#005f5f"
+  , "terminal.ansiBrightWhite"                            : "#afafaf"
+
   // E.g. Background of hyperlink on hover in terminal
   , "terminal.hoverHighlightBackground"                   : "#875f875f"
 
@@ -186,8 +195,9 @@
   //____________________________________________________________________
   , "statusBar.background"                                : "#005faf87"
   , "statusBar.foreground"                                : "#262626"
-  , "statusBarItem.remoteBackground"                      : "#0087af87"
   , "statusBar.noFolderBackground"                        : "#875f8787"
+  , "statusBarItem.remoteBackground"                      : "#0087af87"
+  , "statusBarItem.remoteForeground"                      : "#262626"
 
   , "statusBarItem.warningBackground"                     : "#d78700"
   , "statusBarItem.warningForeground"                     : "#e4e4e4"
