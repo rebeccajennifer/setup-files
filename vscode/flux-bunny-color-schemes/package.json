@@ -1,8 +1,9 @@
 { "name"          : "lagomorphic-constructs-theme-pack"
 , "displayName"   : "Lagomorphic Constructs Theme Pack"
-, "publisher"     : "RebeccaJennifer"
+, "publisher"     : "Rebecca Jennifer"
 , "version"       : "0.0.1"
 , "engines"       : { "vscode": "*" }
+, "icon"          : "rabbit-face.png"
 , "contributes"   :
 
   { "themes"      :

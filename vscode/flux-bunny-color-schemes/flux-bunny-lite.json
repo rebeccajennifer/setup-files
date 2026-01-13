@@ -4,24 +4,6 @@
 , "colors":
   {
     "foreground"                                          : "#262626"
-  //____________________________________________________________________
-  // TESTING
-  //____________________________________________________________________
-  //  "list.filterMatchBackground"                          : "#d787005f"
-  //, "panelSection.dropBackground"                         : "#0087af5f"
-  //, "list.filterMatchBackground"                          : "#FF0000"
-  //, "list.inactiveFocusOutline"                           : "#FF0000"
-  //, "editor.compositionBorder"                            : "#0000FF"
-  //, "editorActionList.background"                         : "#00FFFF"
-  //, "sideBar.dropBackground"                              : "#ff0000"
-  //, "debugConsole.sourceForeground"                       : "#ff0000"
-  //, "debugView.exceptionLabelBackground"                  : "#ffff00"
-  //, "debugView.exceptionLabelForeground"                  : "#ff0000"
-  //, "checkbox.border"                                     : "#00ff00"
-  //, "checkbox.selectBorder"                               : "#008700"
-  //, "checkbox.selectBackground"                           : "#ff0000"
-  //, "checkbox.disabled.background"                        : "#ff0000"
-
 
   //____________________________________________________________________
   // Overridden by other properties
@@ -48,6 +30,15 @@
   , "terminal.ansiCyan"                                   : "#008787"
   , "terminal.ansiWhite"                                  : "#878787"
   //____________________________________________________________________
+  , "terminal.ansiBrightBlack"                            : "#878787"
+  , "terminal.ansiBrightRed"                              : "#d75f87"
+  , "terminal.ansiBrightGreen"                            : "#0087af"
+  , "terminal.ansiBrightYellow"                           : "#d78700"
+  , "terminal.ansiBrightBlue"                             : "#005faf"
+  , "terminal.ansiBrightMagenta"                          : "#875f87"
+  , "terminal.ansiBrightCyan"                             : "#005f5f"
+  , "terminal.ansiBrightWhite"                            : "#afafaf"
+
   , "terminal.ansiBrightBlack"                            : "#878787"
   , "terminal.ansiBrightRed"                              : "#d75f87"
   , "terminal.ansiBrightGreen"                            : "#0087af"
@@ -186,8 +177,9 @@
   //____________________________________________________________________
   , "statusBar.background"                                : "#005faf87"
   , "statusBar.foreground"                                : "#262626"
-  , "statusBarItem.remoteBackground"                      : "#0087af87"
   , "statusBar.noFolderBackground"                        : "#875f8787"
+  , "statusBarItem.remoteBackground"                      : "#0087af87"
+  , "statusBarItem.remoteForeground"                      : "#262626"
 
   , "statusBarItem.warningBackground"                     : "#d78700"
   , "statusBarItem.warningForeground"                     : "#e4e4e4"
