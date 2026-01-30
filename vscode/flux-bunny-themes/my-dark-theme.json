@@ -1,0 +1,24 @@
+{
+  "$schema"     : "vscode://schemas/color-theme"
+
+, "colors":
+  { "editor.background"                 : "#1c1c1c"
+  , "editor.foreground"                 : "#c6c6c6"
+  }
+
+, "tokenColors":
+  [ { "scope": "comment"
+    , "settings": { "foreground": "#d7af5f" }
+    }
+
+  , { "scope": "string"
+    , "settings": { "foreground": "#af5faf" }
+    }
+  ]
+
+  // These properties override tokenColors
+, "semanticTokenColors":
+  { "variable"      : "#00afd7"
+  }
+}
+
