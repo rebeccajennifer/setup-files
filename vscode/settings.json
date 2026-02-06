@@ -120,5 +120,6 @@
       "vmoptions": "--ssh-ident=/home/flux/.ssh/id_ed25519.pub",
       "configScope": 1
     }
-  ]
+  ],
+  "git.suggestSmartCommit": false
 }
