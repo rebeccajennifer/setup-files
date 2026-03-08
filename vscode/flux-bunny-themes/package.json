@@ -15,7 +15,7 @@
       , "uiTheme" : "vs"
       , "path"    : "./flux-bunny-lite.json"
       }
-    , { "label"   : "My Dark Theme"
+    , { "label"   : "My Dark Theme Example"
       , "uiTheme" : "vs"
       , "path"    : "./my-dark-theme.json"
       }
