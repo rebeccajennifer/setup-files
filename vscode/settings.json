@@ -121,5 +121,20 @@
       "configScope": 1
     }
   ],
-  "git.suggestSmartCommit": false
+  "git.suggestSmartCommit": false,
+  "files.associations": {
+    "*.{a80,z80,asm,inc,s}": "asm-collection",
+    "*.{list,lis}": "asm-collection-list"
+  },
+  "cSpell.userWords": [
+    "Adafruit",
+    "autolyse",
+    "Banneton",
+    "bannetons",
+    "ifdef",
+    "ifndef",
+    "Rashkin",
+    "Rebecca",
+    "skinparam"
+  ]
 }
