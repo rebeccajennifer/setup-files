@@ -1,8 +1,16 @@
 { "workbench.colorTheme"                          : "Flux Bunny Dark"
 , "security.workspace.trust.untrustedFiles"       : "open"
+
+//______________________________________________________________________
+// GIT
+//______________________________________________________________________
 , "git.openRepositoryInParentFolders"             : "never"
 , "git.ignoreMissingGitWarning"                   : true
-, "explorer.confirmDragAndDrop"                   : false
+, "git.suggestSmartCommit"                        : false
+
+//______________________________________________________________________
+// EDITOR
+//______________________________________________________________________
 , "files.trimTrailingWhitespace"                  : true
 , "editor.renderWhitespace"                       : "all"
 , "editor.renderControlCharacters"                : true
@@ -10,6 +18,9 @@
 , "editor.tabSize"                                : 2
 , "editor.detectIndentation"                      : false
 , "editor.stickyTabStops"                         : true
+
+, "explorer.confirmDragAndDrop"                   : false
+, "workbench.editor.wrapTabs"                     : true
 
 //______________________________________________________________________
 // WORD WRAP
@@ -34,26 +45,18 @@
 //______________________________________________________________________
 , "vim.vimrc.enable"                              : true
 , "vim.vimrc.path"                                : "$HOME/.vimrc"
-, "vim.cursorStylePerMode"                        :
-  { "insert"                                      : "line"
-  , "normal"                                      : "block"
-  , "visual"                                      : "underline"
-  }
 
 , "editor.cursorBlinking"                         : "solid"
 //______________________________________________________________________
 
 , "editor.codeActionsOnSave"                      :
   { "source.fixAll.markdownlint"                  : "explicit"
+  , "source.organizeImports": "always"
   }
 , "markdown.styles"                               :
   [  "flux-bunny-style.css"
 ]
-, "file.associations"                             :
-  { "*.ada"                                       : "ada"
-  , "*.gpr"                                       : "ada"
-  , "*makefile"                                   : "makefile"
-  }
+
 , "terminal.integrated.profiles.linux"            :
   { "bash": { "path": "/bin/bash" }
   , "zsh" : { "path": "/usr/bin/zsh"}
@@ -66,29 +69,31 @@
 //______________________________________________________________________
 
 , "github.copilot.enable"                         :
-  { "quarto"                                      : false
-  , "*"                                           : true
-  , "plaintext"                                   : false
-  , "markdown"                                    : false
-  , "scminput"                                    : false
-  , "json"                                        : true
+  { "*"         : false
+  , "plaintext" : false
+  , "markdown"  : false
+  , "scminput"  : false
+  , "quarto"    : false
+  , "json"      : false
+  , "plantuml"  : false
+  , "python"    : true
   }
+
 //______________________________________________________________________
 // CODE RUNNER
 //______________________________________________________________________
-
 , "code-runner.clearPreviousOutput"               : true
 , "code-runner.showExecutionMessage"              : false
 , "code-runner.executorMap"                       :
   { "cpp"                                         : "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
   }
 , "explorer.confirmDelete"                        : false
-, "diffEditor.renderSideBySide"                   : true
+, "diffEditor.renderSideBySide"                   : false
 , "git.confirmSync"                               : false
+
 //______________________________________________________________________
 // QNX
 //______________________________________________________________________
-
 , "qnx.sdpPath"                                   : "/home/flux/qnx800"
 , "qnx.targets.defaultTarget"                     : "qemu-qnx800-x86_64"
 , "qnx.arch"                                      : "x86_64"
@@ -108,6 +113,8 @@
     "_QNX_SOURCE"
   ]
 , "qnx.config.defaultProjectsRoot"                : "${userHome}/qnx-projects"
+
+// TODO move to workspace settings
 , "qnx.targets.list":
   [
     {
@@ -121,20 +128,76 @@
       "configScope": 1
     }
   ],
-  "git.suggestSmartCommit": false,
-  "files.associations": {
-    "*.{a80,z80,asm,inc,s}": "asm-collection",
-    "*.{list,lis}": "asm-collection-list"
+
+  "files.associations":
+  { "*.{a80,z80,asm,inc,s}" : "asm-collection"
+  , "*.{list,lis}"          : "asm-collection-list"
+  , "*.ada"                 : "ada"
+  , "*.gpr"                 : "ada"
+  , "*makefile"             : "makefile"
   },
+
   "cSpell.userWords": [
+    "-",
     "Adafruit",
+    "Addl",
+    "APFS",
     "autolyse",
-    "Banneton",
+    "backgnd",
+    "banneton",
     "bannetons",
+    "Bootable",
+    "crnt",
+    "cterm",
+    "ctermbg",
+    "ctermfg",
+    "cursorline",
+    "dasharray",
+    "diskutil",
+    "doctrings",
+    "dysregulate",
+    "dysregulation",
+    "enduml",
+    "farenheit",
+    "figcaption",
+    "guibg",
+    "guifg",
+    "hght",
+    "horiz",
     "ifdef",
     "ifndef",
+    "journaling",
+    "Kruchten's",
+    "levain",
+    "linetype",
+    "Macbook",
+    "mult",
+    "ntox",
+    "Oreos",
+    "pdfs",
+    "Preboot",
+    "pycache",
+    "pytest",
+    "QNXNTO",
+    "qnxsdp",
+    "qnxswc",
+    "QSTI",
     "Rashkin",
     "Rebecca",
-    "skinparam"
-  ]
+    "rebeccajennifer",
+    "rght",
+    "rwxrwxr",
+    "skinparam",
+    "startuml",
+    "UART",
+    "vimrc",
+    "vmoptions",
+    "vmtype",
+    "wdth",
+    "wdths",
+    "wght",
+    "wkday",
+    "wksht"
+  ],
+  "github.copilot.nextEditSuggestions.enabled": false
 }
