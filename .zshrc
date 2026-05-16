@@ -57,22 +57,22 @@ zstyle ':completion:*' menu select
 #_______________________________________________________________
 # Define a list-colors style for file completions
 #---------------------------------------------------------------
-# di: Directories                      
-# fi: Regular files                    
-# ln: Symbolic links                   
-# pi: Named pipes                      
-# so: Sockets                          
-# bd: Block devices                    
-# cd: Character devices                
-# or: Orphaned symbolic links          
-# mi: Missing files                    
-# ex: Executable files                 
-# mh: Multi-hard links                 
-# su: Setuid files                     
-# sg: Setgid files                     
-# tw: Sticky directories               
-# ow: Other writable files             
-# st: Sticky and other writable files  
+# di: Directories
+# fi: Regular files
+# ln: Symbolic links
+# pi: Named pipes
+# so: Sockets
+# bd: Block devices
+# cd: Character devices
+# or: Orphaned symbolic links
+# mi: Missing files
+# ex: Executable files
+# mh: Multi-hard links
+# su: Setuid files
+# sg: Setgid files
+# tw: Sticky directories
+# ow: Other writable files
+# st: Sticky and other writable files
 #_______________________________________________________________
 # ANSI COLORS
 #---------------------------------------------------------------
@@ -80,14 +80,14 @@ zstyle ':completion:*' menu select
 #---------------------------------------------------------------
 # Index   Color         Index   Color
 #---------------------------------------------------------------
-# 30      Black         90      Bright Black          
-# 31      Red           91      Bright Red            
-# 32      Green         92      Bright Green          
-# 33      Yellow        93      Bright Yellow         
-# 34      Blue          94      Bright Blue           
-# 35      Magenta       95      Bright Magenta        
-# 36      Cyan          96      Bright Cyan           
-# 37      White         97      Bright White          
+# 30      Black         90      Bright Black
+# 31      Red           91      Bright Red
+# 32      Green         92      Bright Green
+# 33      Yellow        93      Bright Yellow
+# 34      Blue          94      Bright Blue
+# 35      Magenta       95      Bright Magenta
+# 36      Cyan          96      Bright Cyan
+# 37      White         97      Bright White
 #
 # 00      No color (default)
 #---------------------------------------------------------------
@@ -104,22 +104,22 @@ zstyle ':completion:*' menu select
 # 46      Cyan    background
 # 47      White   background
 #---------------------------------------------------------------
-zstyle ':completion:*:default' list-colors "di=32"  # Directories                      
-zstyle ':completion:*:default' list-colors "fi=32"  # Regular files                    
-zstyle ':completion:*:default' list-colors "ln=36"  # Symbolic links                   
-zstyle ':completion:*:default' list-colors "pi=33"  # Named pipes                      
-zstyle ':completion:*:default' list-colors "so=35"  # Sockets                          
-zstyle ':completion:*:default' list-colors "bd=33"  # Block devices                    
-zstyle ':completion:*:default' list-colors "cd=31"  # Character devices                
-zstyle ':completion:*:default' list-colors "or=31"  # Orphaned symbolic links          
-zstyle ':completion:*:default' list-colors "mi=00"  # Missing files                    
-zstyle ':completion:*:default' list-colors "ex=32"  # Executable files                 
-zstyle ':completion:*:default' list-colors "mh=00"  # Multi-hard links                 
-zstyle ':completion:*:default' list-colors "su=37"  # Setuid files                     
-zstyle ':completion:*:default' list-colors "sg=37"  # Setgid files                     
-zstyle ':completion:*:default' list-colors "tw=37"  # Sticky directories               
-zstyle ':completion:*:default' list-colors "ow=37"  # Other writable files             
-zstyle ':completion:*:default' list-colors "st=37"  # Sticky and other writable files  
+#zstyle ':completion:*:default' list-colors "di=32"  # Directories
+#zstyle ':completion:*:default' list-colors "fi=32"  # Regular files
+#zstyle ':completion:*:default' list-colors "ln=36"  # Symbolic links
+#zstyle ':completion:*:default' list-colors "pi=33"  # Named pipes
+#zstyle ':completion:*:default' list-colors "so=35"  # Sockets
+#zstyle ':completion:*:default' list-colors "bd=33"  # Block devices
+#zstyle ':completion:*:default' list-colors "cd=31"  # Character devices
+#zstyle ':completion:*:default' list-colors "or=31"  # Orphaned symbolic links
+#zstyle ':completion:*:default' list-colors "mi=00"  # Missing files
+#zstyle ':completion:*:default' list-colors "ex=32"  # Executable files
+#zstyle ':completion:*:default' list-colors "mh=00"  # Multi-hard links
+#zstyle ':completion:*:default' list-colors "su=37"  # Setuid files
+#zstyle ':completion:*:default' list-colors "sg=37"  # Setgid files
+#zstyle ':completion:*:default' list-colors "tw=37"  # Sticky directories
+#zstyle ':completion:*:default' list-colors "ow=37"  # Other writable files
+#zstyle ':completion:*:default' list-colors "st=37"  # Sticky and other writable files
 #_______________________________________________________________
 
 
