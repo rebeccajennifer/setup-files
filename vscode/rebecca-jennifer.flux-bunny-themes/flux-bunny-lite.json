@@ -559,10 +559,10 @@
   , "menu.background"                                     : "#eeeeee"
 
   // E.g. Info bubble on hover over activity bar, in line code
-  , "editorHoverWidget.background"                        : "#004d5f"
-  , "editorHoverWidget.foreground"                        : "#eeeeee"
+  , "editorHoverWidget.background"                        : "#eeeeee"
+  , "editorHoverWidget.foreground"                        : "#262626"
   , "editorHoverWidget.statusBarBackground"               : "#f8f8f8"
-  , "editorHoverWidget.border"                            : "#00000000"
+  , "editorHoverWidget.border"                            : "#5fa2a2"
   // Not sure what this does
   , "editorHoverWidget.highlightForeground"               : "#262626"
 
