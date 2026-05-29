@@ -6,6 +6,9 @@
 set cursorline
 set hlsearch
 
+" Prevent beep, e.g. pressing escape when already in normal mode
+set visualbell
+
 " Display highlight group under cursor
 nnoremap 'hg :echo synIDattr(synID(line('.'), col('.'), 1), 'name')
 
@@ -20,6 +23,7 @@ nnoremap src    :source ~/.vimrc <cr>
 
 " Text will wrap in window if it goes beyond window width
 "set wrap
+set nowrap
 
 " Text will wrap when a word breaks
 set linebreak
@@ -114,14 +118,23 @@ set backspace=2
 
 
 "_______________________________________________________________________
+autocmd BufEnter *.dircolors* :setlocal filetype=dircolors
+autocmd BufEnter *.bash*      :setlocal filetype=bash
+
+"_______________________________________________________________________
 " COLOR SCHEME
 
 " Load color scheme while editing
-cnoremap cf     :colorscheme flux-dark <cr>
+cnoremap cf     colorscheme flux-bunny-dark <cr>
 
 " Edit color scheme
-cnoremap vf     :e ~/.vim/colors/flux-dark.vim <cr>
+cnoremap vf     e ~/.vim/colors/flux-bunny-dark.vim <cr>
 
 " Set colorscheme
-colorscheme flux-dark
+colorscheme flux-bunny-dark
 
+"_______________________________________________________________________
+" Wrap to 72 characters
+"
+" Needs work
+"nnoremap 'w 072lbbeldwi<cr><esc>
