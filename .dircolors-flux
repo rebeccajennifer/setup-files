@@ -99,14 +99,14 @@ TERM xterm*
 # 46=cyan
 # 47=white
 
-#NORMAL 00 # no color code at all
-#FILE   00 # regular file: use no color at all
-RESET   0 # reset to "normal" color
+#NORMAL 00    # no color code at all
+#FILE   00    # regular file: use no color at all
+RESET   0     # reset to "normal" color
 DIR     01;34 # directory
 LINK    01;36 # symbolic link. (If you set this to 'target' instead of a
 
-# numerical value, the color is as for the file pointed to.)
 MULTIHARDLINK 00 # regular file with more than one link
+
 FIFO          40;33 # pipe
 SOCK          01;35 # socket
 DOOR          01;35 # door
@@ -117,9 +117,10 @@ MISSING       00 # ... and the files they point to
 SETUID        37;41 # file that is setuid (u+s)
 SETGID        30;43 # file that is setgid (g+s)
 CAPABILITY    00 # file with capability (very expensive to lookup)
+
 STICKY_OTHER_WRITABLE 30;42 # dir that is sticky and other-writable (+t,o+w)
-OTHER_WRITABLE 34;42 # dir that is other-writable (o+w) and not sticky
-STICKY          37;44 # dir with the sticky bit set (+t) and not other-writable
+OTHER_WRITABLE        30;42 # dir that is other-writable (o+w) and not sticky
+STICKY                37;44 # dir with the sticky bit set (+t) and not other-writable
 
 # Files with execute permission:
 EXEC 00    
@@ -137,29 +138,32 @@ EXEC 00
 # ======================================================================
 # Code Files
 # ======================================================================
-.cpp    01;35 # C++
-.c      01;35 # C
-.h      01;35 # C/C++ header
-.hpp    01;35 # C++ header
-.py     01;35 # Python
+.cpp          01;35 # C++
+.c            01;35 # C
+.h            01;35 # C/C++ header
+.hpp          01;35 # C++ header
+.py           01;35 # Python
 
-.ada    01;35 # Ada
-.adb    01;35 # Ada
-.ads    01;35 # Ada header
-.css    01;35 # HTML styling
-.html   01;35 # HyperText Markup Language
-.js     01;35 # JavaScript
-.r      01;35 # R
-.rb     01;35 # Ruby
-.sql    01;35 # SQL
-.swift  01;35 # Swift
-.ts     01;35 # TypeScript
+.ada          01;35 # Ada
+.adb          01;35 # Ada
+.ads          01;35 # Ada header
+.css          01;35 # HTML styling
+.html         01;35 # HyperText Markup Language
+.js           01;35 # JavaScript
+.r            01;35 # R
+.rb           01;35 # Ruby
+.sql          01;35 # SQL
+.swift        01;35 # Swift
+.ts           01;35 # TypeScript
+.vim          01;35 # Vim script
+
+.bash_vxworks 01;35
 
 # ======================================================================
 # Text and Configuration Files
 # ======================================================================
-.txt    01;33
-.md     01;33
+.txt          01;33
+.md           01;33
 
 .bash_profile 01;33
 .bashrc       01;33
@@ -178,13 +182,13 @@ EXEC 00
 # ======================================================================
 .sh   01;32
 .csh  01;32
-
-# DOS-Style Suffixes
 .cmd  01;32
 .exe  01;32
 .com  01;32
 .btm  01;32
 .bat  01;32
+.vxe  01;32
+.out  01;32
 
 # ======================================================================
 # Archives or Compressed

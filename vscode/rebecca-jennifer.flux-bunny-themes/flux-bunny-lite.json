@@ -137,7 +137,7 @@
   , "list.inactiveSelectionBackground"                    : "#26262610"
   , "list.inactiveSelectionForeground"                    : "#262626"
   , "list.activeSelectionIconForeground"                  : "#262626"
-  , "list.hoverBackground"                                : "#eeeeee60"
+  , "list.hoverBackground"                                : "#5f8ca2"
 
   // Drag and drop files
   , "list.dropBackground"                                 : "#af5faf"
@@ -336,12 +336,12 @@
   //____________________________________________________________________
   , "button.background"                                   : "#5fa2a2"
   , "button.foreground"                                   : "#262626"
-  , "button.hoverBackground"                              : "#af5faf"
+  , "button.hoverBackground"                              : "#5f8ca2"
   , "button.border"                                       : "#00000000"
 
-  , "button.secondaryBackground"                          : "#5f8ca2"
+  , "button.secondaryBackground"                          : "#af5faf"
   , "button.secondaryForeground"                          : "#262626"
-  , "button.secondaryHoverBackground"                     : "#af5faf"
+  , "button.secondaryHoverBackground"                     : "#5f8ca2"
   , "button.secondaryBorder"                              : "#00000000"
 
   // E.g. Checkboxes in settings
@@ -513,7 +513,8 @@
   //____________________________________________________________________
 
   // E.g. Settings icon in debug sidebar, add file icon in explorer
-  , "icon.foreground"                                     : "#878787"
+  , "icon.foreground"                                     : "#262626c0"
+
   , "editorLightBulb.foreground"                          : "#d75f00"
   , "editorInfo.foreground"                               : "#008700"
 
@@ -557,6 +558,9 @@
 
   // E.g. Right-click menu
   , "menu.background"                                     : "#eeeeee"
+  , "menu.separatorBackground"                            : "#26262640"
+
+  , "toolbar.hoverBackground"                             : "#26262640"
 
   // E.g. Info bubble on hover over activity bar, in line code
   , "editorHoverWidget.background"                        : "#eeeeee"
