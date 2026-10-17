@@ -1,235 +1,371 @@
-{ "workbench.colorTheme"                          : "Flux Bunny Dark"
-, "security.workspace.trust.untrustedFiles"       : "open"
+{ "security.workspace.trust.untrustedFiles": "open",
 
-//______________________________________________________________________
-// GIT
-//______________________________________________________________________
-, "git.openRepositoryInParentFolders"             : "never"
-, "git.ignoreMissingGitWarning"                   : true
-, "git.suggestSmartCommit"                        : false
+  //____________________________________________________________________
+  // PERSONAL PREFERENCES / VISUAL REPRESENTATION
+  //____________________________________________________________________
+  "workbench.colorTheme"       : "Flux Bunny Dark",
+  "editor.cursorBlinking"      : "solid"          ,
+  "workbench.editor.wrapTabs"  : false            ,
+  "explorer.confirmDragAndDrop": false            ,
+  "explorer.confirmDelete"     : false            ,
 
-//______________________________________________________________________
-// EDITOR
-//______________________________________________________________________
-, "files.trimTrailingWhitespace"                  : true
-, "editor.renderWhitespace"                       : "all"
-, "editor.renderControlCharacters"                : true
-, "editor.rulers"                                 : [72, 80]
-, "editor.tabSize"                                : 2
-, "editor.detectIndentation"                      : false
-, "editor.stickyTabStops"                         : true
+  "terminal.integrated.minimumContrastRatio": 1,
 
-, "explorer.confirmDragAndDrop"                   : false
-, "workbench.editor.wrapTabs"                     : true
+  //--------------------------------------------------------------------
+  // DIFF EDITOR
+  //--------------------------------------------------------------------
+  "diffEditor.renderSideBySide"               : true ,
+  "diffEditor.ignoreTrimWhitespace"           : false,
+  "diffEditor.useInlineViewWhenSpaceIsLimited": false,
 
-//______________________________________________________________________
-// WORD WRAP
-//______________________________________________________________________
-, "editor.wordWrap"                               : "off"
-//, "editor.wordWrap"                             : "wordWrapColumn"
+  //--------------------------------------------------------------------
+  // VS Code "Modern UI"
+  //--------------------------------------------------------------------
+  // NOTE: Some color theme properties do not work properly when set
+  // in the theme file. Include them in the
+  // "workbench.colorCustomizations" section to ensure proper
+  // implementation.
+  //
+  // Alternatively, set: "workbench.experimental.modernUI": false
+  // to disable the malfunctioning properties.
+  "workbench.experimental.modernUI": false,
+  //"workbench.colorCustomizations": {
+  //    "modernEditorTab.activeBackground": "#eeeeee"
+  //},
 
-, "editor.wordWrapColumn"                         : 72
-, "[quarto]"                                      :
-  { "editor.wordWrap"                             : "on"
-  , "editor.wordWrapColumn"                       : 72
-  , "editor.tabSize"                              : 2
-  }
-, "[css]"                                         :
-  { "editor.wordWrap"                             : "off"
-  , "editor.wordWrapColumn"                       : 72
-  , "editor.tabSize"                              : 2
-  }
+  //--------------------------------------------------------------------
+  // VIM
+  //--------------------------------------------------------------------
+  "vim.vimrc.enable": true          ,
+  "vim.vimrc.path"  : "$HOME/.vimrc",
 
-//______________________________________________________________________
-// VIM
-//______________________________________________________________________
-, "vim.vimrc.enable"                              : true
-, "vim.vimrc.path"                                : "$HOME/.vimrc"
+  //____________________________________________________________________
+  // EDITOR
+  //____________________________________________________________________
+  "editor.renderWhitespace"       : "all",
+  "files.trimTrailingWhitespace"  : true ,
+  "editor.renderControlCharacters": true ,
+  "editor.detectIndentation"      : false,
+  "editor.stickyTabStops"         : true ,
 
-, "editor.cursorBlinking"                         : "solid"
-//______________________________________________________________________
+  "editor.rulers": [ 72, 80 ],
+  "editor.tabSize": 2,
 
-, "editor.codeActionsOnSave"                      :
-  { "source.fixAll.markdownlint"                  : "explicit"
-  , "source.organizeImports": "always"
-  }
-, "markdown.styles"                               :
-  [  "flux-bunny-style.css"
-]
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": "explicit",
+    "source.organizeImports"    : "explicit"
+  },
 
-, "terminal.integrated.profiles.linux"            :
-  { "bash": { "path": "/bin/bash" }
-  , "zsh" : { "path": "/usr/bin/zsh"}
-  }
-, "terminal.integrated.defaultProfile.linux"      : "zsh"
-, "terminal.integrated.suggest.enabled"           : false
-, "terminal.integrated.minimumContrastRatio"      : 1
-//______________________________________________________________________
-// COPILOT
-//______________________________________________________________________
+  //____________________________________________________________________
+  // FORMATTING
+  //____________________________________________________________________
+  "editor.wordWrap": "off",
+  //, "editor.wordWrap": "wordWrapColumn"
+  "editor.wordWrapColumn": 72,
 
-, "github.copilot.enable"                         :
-  { "*"         : false
-  , "plaintext" : false
-  , "markdown"  : false
-  , "scminput"  : false
-  , "quarto"    : false
-  , "json"      : false
-  , "plantuml"  : false
-  , "python"    : true
-  }
+  "editor.formatOnSave": true  ,
+  "clang-format.style" : "file",
 
-//______________________________________________________________________
-// CODE RUNNER
-//______________________________________________________________________
-, "code-runner.clearPreviousOutput"               : true
-, "code-runner.showExecutionMessage"              : false
-, "code-runner.executorMap"                       :
-  { "cpp"                                         : "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
-  }
-, "explorer.confirmDelete"                        : false
-, "diffEditor.renderSideBySide"                   : false
-, "git.confirmSync"                               : false
+  "[c]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave"    : true
+  },
 
-//______________________________________________________________________
-// QNX
-//______________________________________________________________________
-, "qnx.sdpPath"                                   : "/home/flux/qnx800"
-, "qnx.targets.defaultTarget"                     : "qemu-qnx800-x86_64"
-, "qnx.arch"                                      : "x86_64"
-, "C_Cpp.default.cppStandard"                     : "gnu++17"
-, "C_Cpp.default.cStandard"                       : "gnu11"
-, "C_Cpp.default.intelliSenseMode"                : "linux-gcc-x64"
-, "C_Cpp.default.systemIncludePath"               :
-  [
-    "/home/flux/qnx800/target/qnx/usr/include",
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave"    : true
+  },
+
+  "[css]": { "editor.defaultFormatter": null, "editor.formatOnSave": true },
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "j-brooke.fracturedjsonvsc",
+    "editor.formatOnSave"    : true
+  },
+
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.formatOnSave"    : true                        ,
+    "editor.wordWrap"        : "on"
+  },
+
+  "[python]": { "editor.formatOnSave": false },
+
+  "[quarto]": {
+    "editor.wordWrap"      : "on",
+    "editor.wordWrapColumn": 72,
+    "editor.tabSize"       : 2
+  },
+
+  "markdown.styles": [ "flux-bunny-style.css" ],
+
+  //____________________________________________________________________
+  // JSON FORMATTER - Extension 'FracturedJson' by j-brooke
+  //____________________________________________________________________
+  "fracturedjsonvsc.TableCommaPlacement"       : "AfterPadding",  // Align ,
+  "fracturedjsonvsc.ColonBeforePropNamePadding": false         ,  // Align :
+
+  // Add a space after character
+  "fracturedjsonvsc.ColonPadding"        : true,  // :
+  "fracturedjsonvsc.SimpleBracketPadding": true,  // [
+  "fracturedjsonvsc.CommaPadding"        : true,  // ,
+  "fracturedjsonvsc.NestedBracketPadding": true,
+
+  // Space before comment
+  // Note: If both CommaPadding and CommentPadding are true, two
+  // spaces are inserted after a comma and before a comment
+  "fracturedjsonvsc.CommentPadding": true,
+
+  //--------------------------------------------------------------------
+  // Property: "fracturedjsonvsc.AllowTableSegments"
+  // Value   : true
+  // Meaning : Sub sections in table are lined up separately:
+  //--------------------------------------------------------------------
+  //"files.associations": {
+  //    "*makefile": "makefile",
+  //    "*.yapf"   : "ini"     ,
+
+  //    ".clang-format"        : "yaml"          ,
+  //    "*.{a80,z80,asm,inc,s}": "asm-collection",
+
+  //    "*.{list,lis}": "asm-collection-list",
+  //    "*.gpr"       : "ada"
+  //},
+  //--------------------------------------------------------------------
+  "fracturedjsonvsc.AllowTableSegments": true,
+
+  "fracturedjsonvsc.PreserveBlankLines"            : true ,
+  "fracturedjsonvsc.SplitTableSegmentsAtBlankLines": true ,
+  "fracturedjsonvsc.SplitTableSegmentsAtComments"  : true ,
+  "fracturedjsonvsc.CollapseOpeningBrackets"       : true ,
+  "fracturedjsonvsc.CollapseClosingBrackets"       : false,
+
+  // Align decimal points across consecutive properties with decimal values
+  // E.g.: "property_0": 42.0,
+  //       "property_1":  3.14,
+  "fracturedjsonvsc.NumberListAlignment": "Decimal",
+
+  "fracturedjsonvsc.MaxPropNamePadding": 200,
+  "fracturedjsonvsc.MaxTotalLineLength":  80,
+
+  //--------------------------------------------------------------------
+  // Unsure of these settings
+  "fracturedjsonvsc.MaxInlineComplexity"      : 2,
+  "fracturedjsonvsc.MaxCompactArrayComplexity": 2,
+  "fracturedjsonvsc.MaxTableRowComplexity"    : 2,
+
+  "fracturedjsonvsc.AllowTrailingCommas"  : false               ,
+  "fracturedjsonvsc.CommentPolicyForJSONC": "Preserve"          ,
+  "fracturedjsonvsc.CommentPolicyForJSON" : "TreatAsError"      ,
+  "fracturedjsonvsc.StringWidthPolicy"    : "EastAsianFullWidth",
+
+  "fracturedjsonvsc.AlwaysExpandDepth"      : 0,
+  "fracturedjsonvsc.MinCompactArrayRowItems": 3,
+
+  //____________________________________________________________________
+  // SYNTAX HIGHLIGHTING
+  //____________________________________________________________________
+  // File type associations for syntax highlighting
+  "files.associations": {
+    "*makefile"            : "makefile"           ,
+    "*.yapf"               : "ini"                ,
+    ".clang-format"        : "yaml"               ,
+    "*.{a80,z80,asm,inc,s}": "asm-collection"     ,
+    "*.{list,lis}"         : "asm-collection-list",
+    "*.ada"                : "ada"                ,
+    "*.gpr"                : "ada"
+  },
+
+  //____________________________________________________________________
+  // TERMINAL
+  //____________________________________________________________________
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  "terminal.integrated.profiles.linux": {
+    "bash": { "path": "/bin/bash"    },
+    "zsh" : { "path": "/usr/bin/zsh" }
+  },
+
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.suggest.enabled"     : false,
+
+  //____________________________________________________________________
+  // GIT
+  //____________________________________________________________________
+  "git.openRepositoryInParentFolders": "never",
+  "git.ignoreMissingGitWarning"      : true   ,
+  "git.suggestSmartCommit"           : false  ,
+  "git.confirmSync"                  : false  ,
+  "git.autofetch"                    : false  ,
+
+  //____________________________________________________________________
+  // RUNNING CODE
+  //____________________________________________________________________
+  "debug.allowBreakpointsEverywhere": true ,
+  "telemetry.editStats.enabled"     : false,
+  "python.createEnvironment.trigger": "off",
+
+  //____________________________________________________________________
+  // STM32CUBE
+  //____________________________________________________________________
+  "stm32cube-ide-clangd.enableFormatting": true,
+  "stm32cube-ide-debug-core.device-manager.NewDeviceDetectedNotification": false,
+
+  //____________________________________________________________________
+  // AI & COPILOT
+  //____________________________________________________________________
+  "chat.disableAIFeatures"                    : true ,
+  "github.copilot.nextEditSuggestions.enabled": false,
+
+  "github.copilot.enable": {
+    "*"        : false,
+    "plaintext": false,
+    "markdown" : false,
+    "scminput" : false,
+    "quarto"   : false,
+    "json"     : false,
+    "plantuml" : false,
+    "python"   : false
+  },
+
+  //____________________________________________________________________
+  // CODE RUNNER
+  //____________________________________________________________________
+  "code-runner.clearPreviousOutput" : true ,
+  "code-runner.showExecutionMessage": false,
+  "code-runner.executorMap": {
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  },
+
+  //____________________________________________________________________
+  // MACHINE SPECIFIC PATHS
+  //____________________________________________________________________
+
+  //--------------------------------------------------------------------
+  // Clang & CMake
+  //--------------------------------------------------------------------
+
+  "clangd.path": "c:\\Users\\RebeccaRashkin\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\22.1.6\\clangd_22.1.6\\bin\\clangd.exe",
+  "cmake.environment": {
+    "PATH": "c:/Users/RebeccaRashkin/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.47.0-win32-x64/resources/cube-cmake/win32/x86_64;c:\\Users\\RebeccaRashkin\\.vscode\\extensions\\stmicroelectronics.stm32cube-ide-core-1.5.0-win32-x64\\resources\\binaries\\win32\\x86_64;${env.PATH}"
+  },
+
+  //--------------------------------------------------------------------
+  // QNX
+  //--------------------------------------------------------------------
+  "qnx.config.defaultProjectsRoot": "${userHome}/qnx-projects",
+  "qnx.sdpPath"                   : "/home/flux/qnx800"       ,
+  "qnx.targets.defaultTarget"     : "qemu-qnx800-x86_64"      ,
+  "qnx.arch"                      : "x86_64"                  ,
+
+  "C_Cpp.intelliSenseEngine"      : "disabled"     ,
+  "C_Cpp.default.cppStandard"     : "gnu++17"      ,
+  "C_Cpp.default.cStandard"       : "gnu11"        ,
+  "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+
+  "C_Cpp.default.systemIncludePath": [
+    "/home/flux/qnx800/target/qnx/usr/include"       ,
     "/home/flux/qnx800/target/qnx/usr/include/c++/v1"
-  ]
-, "C_Cpp.default.compilerPath"                    : "/home/flux/qnx800/host/linux/x86_64/usr/bin/ntox86_64-g++"
-, "C_Cpp.default.defines"                         :
-  [
-    "__X86_64__",
-    "__QNXNTO__=1",
-    "_QNX_SOURCE"
-  ]
-, "qnx.config.defaultProjectsRoot"                : "${userHome}/qnx-projects"
+  ],
 
-// TODO move to workspace settings
-, "qnx.targets.list":
-  [
-    {
-      "name": "qemu-qnx800-x86_64",
-      "address": "192.168.122.156",
-      "port": "8000",
-      "arch": "x86_64",
-      "path": "/home/flux/qnx-projects/targets/qemu-qnx800-x86_64",
-      "vmtype": "qemu",
-      "vmoptions": "--ssh-ident=/home/flux/.ssh/id_ed25519.pub",
+  "C_Cpp.default.compilerPath": "/home/flux/qnx800/host/linux/x86_64/usr/bin/ntox86_64-g++",
+  "C_Cpp.default.defines": [ "__X86_64__", "__QNXNTO__=1", "_QNX_SOURCE" ],
+
+  // TODO move to workspace settings
+  "qnx.targets.list": [
+    { "name"       : "qemu-qnx800-x86_64",
+      "address"    : "192.168.122.156",
+      "port"       : "8000",
+      "arch"       : "x86_64",
+      "path"       : "/home/flux/qnx-projects/targets/qemu-qnx800-x86_64",
+      "vmtype"     : "qemu",
+      "vmoptions"  : "--ssh-ident=/home/flux/.ssh/id_ed25519.pub",
       "configScope": 1
     }
   ],
 
-  "files.associations":
-  { "*.{a80,z80,asm,inc,s}" : "asm-collection"
-  , "*.{list,lis}"          : "asm-collection-list"
-  , "*.ada"                 : "ada"
-  , "*.gpr"                 : "ada"
-  , "*makefile"             : "makefile"
-  },
-
+  //____________________________________________________________________
+  // SPELL CHECKER
+  //____________________________________________________________________
   "cSpell.userWords": [
-    "-",
-    "Adafruit",
-    "autolyse",
-    "backgnd",
-    "banneton",
-    "bannetons",
-    "Bootable",
-    "CIPO",
-    "COPI",
-    "doctrings",
-    "dysregulate",
-    "dysregulation",
-    "farenheit",
-    "journaling",
-    "Kruchten's",
-    "levain",
-    "linetype",
-    "Macbook",
-    "mult",
-    "Oreos",
-    "pdfs",
-    "Preboot",
-    "Rashkin",
-    "Rebecca",
-    "rebeccajennifer",
-    "regedit",
-    "skinparam",
-    "syscall",
-    "SYSCALLS",
-    "uart",
-    "Verilog",
-    "vxworks"
+    "-"                 , "Adafruit"          , "Allman"            ,
+    "autolyse"          , "backgnd"           , "banneton"          ,
+    "bannetons"         , "baudrate"          , "bleh"              ,
+    "Bootable"          , "CIPO"              , "Consolas"          ,
+    "COPI"              , "ctrl"              , "doctrings"         ,
+    "dysregulate"       , "dysregulation"     , "farenheit"         ,
+    "fooo"              , "fracturedjsonvsc"  , "graphviz"          ,
+    "hubbed"            , "Inkscape"          , "journaling"        ,
+    "Kolour"            , "Kruchten's"        , "levain"            ,
+    "LFRB"              , "linetype"          , "Lucida"            ,
+    "Macbook"           , "MEERSTETTER"       , "milliamp"          ,
+    "milliamps"         , "mult"              , "Oreos"             ,
+    "Pandoc"            , "pdfs"              , "Photodiode"        ,
+    "Preboot"           , "Rashkin"           , "Rebecca"           ,
+    "rebeccajennifer"   , "regedit"           , "rrashkin"          ,
+    "skinparam"         , "stackframe"        , "stmicroelectronics",
+    "submodels"         , "syscall"           , "SYSCALLS"          ,
+    "uart"              , "usart"             , "Verilog"           ,
+    "vxworks"           , "weasyprint"        , "worktree"          ,
+    "yapf"
   ],
-  "github.copilot.nextEditSuggestions.enabled": false,
+
+  //____________________________________________________________________
   "cSpell.ignoreWords": [
-    "APFS",
-    "Addl",
-    "Allman",
-    "Noexcept",
-    "QNXNTO",
-    "QSTI",
-    "SCLK",
-    "STRINGIZE",
-    "argparse",
-    "blk",
-    "blu",
-    "bslib",
-    "cppdbg",
-    "crnt",
-    "cterm",
-    "ctermbg",
-    "ctermfg",
-    "cursorline",
-    "cya",
-    "dasharray",
-    "debugpy",
-    "diskutil",
-    "dpkg",
-    "enduml",
-    "figcaption",
-    "grn",
-    "guibg",
-    "guifg",
-    "hght",
-    "horiz",
-    "ifdef",
-    "ifndef",
-    "invald",
-    "ntox",
-    "pycache",
-    "pytest",
-    "qnxsdp",
-    "qnxswc",
-    "rght",
-    "rwxrwxr",
-    "sdkenv",
-    "startuml",
-    "valuebox",
-    "vimrc",
-    "vio",
-    "vmoptions",
-    "vmtype",
-    "wdth",
-    "wdths",
-    "wght",
-    "wkday",
-    "wksht",
-    "yel"
-  ],
-  "cmake.environment": {
-    "PATH": "/home/flux/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.45.0-linux-x64/resources/cube-cmake/linux/x86_64:/home/flux/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.3.0-linux-x64/resources/binaries/linux/x86_64:${env.PATH}"
-  },
-  "debug.allowBreakpointsEverywhere": true,
-  "C_Cpp.intelliSenseEngine": "disabled"
+    "APFS"            , "Addl"            , "Allman"          ,
+    "Anson"           , "BBHIQ"           , "DODI"            ,
+    "ERRORRR"         , "Isolved"         , "Lizeth"          ,
+    "Modbus"          , "Musn't"          , "Neuzeit"         ,
+    "Noexcept"        , "PIIA"            , "Periph"          ,
+    "Pinout"          , "QNXNTO"          , "QSTI"            ,
+    "RSPONSE"         , "SCLK"            , "STRINGIZE"       ,
+    "SafetyManager"   , "Spamalot"        , "Unanet"          ,
+    "Zhang"           , "ackn"            , "alrm"            ,
+    "argparse"        , "arrw"            , "autofetch"       ,
+    "autolyse"        , "backgnd"         , "backgroundcolor" ,
+    "betw"            , "blinky"          , "blk"             ,
+    "blu"             , "bord"            , "bslib"           ,
+    "calcsize"        , "chck"            , "clss"            ,
+    "cmcss"           , "cnct"            , "cppdbg"          ,
+    "crnt"            , "crtp"            , "cterm"           ,
+    "ctermbg"         , "ctermfg"         , "ctrl_map"        ,
+    "ctrlr"           , "cursorline"      , "cya"             ,
+    "dasharray"       , "debugpy"         , "deci"            ,
+    "devc"            , "difftool"        , "discnct"         ,
+    "diskutil"        , "docstrings"      , "doctrings"       ,
+    "dpkg"            , "drvr"            , "elec"            ,
+    "enddd"           , "enduml"          , "errr"            ,
+    "farenheit"       , "figcaption"      , "fntend"          ,
+    "fracturedjsonvsc", "gedit"           , "getframe"        ,
+    "gloa"            , "grn"             , "guibg"           ,
+    "guifg"           , "hediet"          , "hght"            ,
+    "horiz"           , "hosttttttt"      , "huart"           ,
+    "hwil"            , "ibit"            , "ifdef"           ,
+    "ifndef"          , "intlk"           , "invald"          ,
+    "jebbs"           , "labl"            , "larg"            ,
+    "levain"          , "matplotlib"      , "memset"          ,
+    "mhutchie"        , "mult"            , "multipl"         ,
+    "ntox"            , "nucleo"          , "numpy"           ,
+    "oneline"         , "othr"            , "payld"           ,
+    "pbit"            , "pdding"          , "pdfs"            ,
+    "prefx"           , "pwdth"           , "pycache"         ,
+    "pyqt"            , "pytest"          , "qfont"           ,
+    "qnxsdp"          , "qnxswc"          , "regedit"         ,
+    "rght"            , "rodddd"          , "roddddddd"       ,
+    "rollup"          , "rset"            , "rwxrwxr"         ,
+    "sdkenv"          , "sequen"          , "shutterrrr"      ,
+    "skinparam"       , "smll"            , "startuml"        ,
+    "stretcherr"      , "stto"            , "subcontrollers"  ,
+    "sysclock"        , "systemmmmm"      , "templt"          ,
+    "trggr"           , "typee"           , "valu"            ,
+    "valuebox"        , "vimb"            , "vimrc"           ,
+    "vimt"            , "vimv"            , "vimz"            ,
+    "vio"             , "vmoptions"       , "vmtype"          ,
+    "vscodevim"       , "vyyyy"           , "wdth"            ,
+    "wdths"           , "wght"            , "widg"            ,
+    "widgt"           , "wkday"           , "wksht"           ,
+    "xaver"           , "xport"           , "yel"             ,
+    "yzane"           , "yzhang"
+  ]
+
 }
