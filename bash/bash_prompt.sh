@@ -13,10 +13,10 @@ if [[ -z $ENV_STR ]]; then
 
     CLR_='\[\e[0m\]'
     RED_='\[\e[91m\]'
-    GRN_='\[\e[32m\]'
-    YEL_='\[\e[33m\]'
+    GRN_='\[\e[92m\]'
+    YEL_='\[\e[93m\]'
     BLU_='\[\e[94m\]'
-    VIO_='\[\e[35m\]'
+    VIO_='\[\e[95m\]'
     CYA_='\[\e[96m\]'
 
     # \A    time
@@ -28,12 +28,12 @@ if [[ -z $ENV_STR ]]; then
     ENV_STR='zsh '
 
     CLR_='%f'
-    RED_='%F{red}'
-    GRN_='%F{green}'
-    YEL_='%F{yellow}'
-    BLU_='%F{blue}'
-    VIO_='%F{magenta}'
-    CYA_='%F{cyan}'
+    RED_='%F{9}'
+    GRN_='%F{10}'
+    YEL_='%F{11}'
+    BLU_='%F{12}'
+    VIO_='%F{13}'
+    CYA_='%F{14}'
 
     TIME_STR='%D{%H:%M}'
     WORK_DIR='%~'
@@ -53,7 +53,7 @@ if [[ -z $ENV_STR ]]; then
 
 fi
 
-PS1="$RED_${ENV_STR}$CLR_ 🐰 $VIO_$TIME_STR$CLR_ [$BLU_$WORK_DIR$CLR_] $GRN_>$CLR_ "
+PS1="${RED_}${ENV_STR}$CLR_ 🐰 $VIO_$TIME_STR$CLR_ [$BLU_$WORK_DIR$CLR_] $GRN_>$CLR_ "
 
 #_______________________________________________________________
 # REFERENCE
@@ -69,4 +69,4 @@ PS1="$RED_${ENV_STR}$CLR_ 🐰 $VIO_$TIME_STR$CLR_ [$BLU_$WORK_DIR$CLR_] $GRN_>$
 #---------------------------------------------------------------
 # %D{format}  : Current date and time formatted according to format.
 #               format ex: %D{%H:%M:%S}
-#
+
