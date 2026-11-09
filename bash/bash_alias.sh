@@ -1,12 +1,21 @@
 #_______________________________________________________________________
 # DESCRIPTION
+#
 # This file contains aliases.
 #_______________________________________________________________________
 
 #_______________________________________________________________________
-bcompare='BCompare.exe'
+# EDIT SETTINGS
+#
+# Edit various configuration files. You may edit these commands to use
+# your preferred text editor.
+#_______________________________________________________________________
 
-alias dsa='exit'
+# Edit bash profile and immediately source it
+alias nanob='nano $MY_HOME/.bash_profile; src'
+
+#_______________________________________________________________________
+bcompare='BCompare.exe'
 
 #_______________________________________________________________________
 # List files in directory
@@ -20,5 +29,4 @@ alias dsa='exit'
 # --no-group Omit group column
 alias la='ls -lahgp --color=auto --no-group \
    --group-directories-first'
-
 

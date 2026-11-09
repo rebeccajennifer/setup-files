@@ -5,11 +5,11 @@
 # related to git.
 #_______________________________________________________________________
 
-alias gs='  git status'
 alias glo=' git log --oneline --decorate --graph'
 alias gloa='glo --all'
 
 alias gdt=' git difftool --no-symlinks --dir-diff'
+# TODO: Add if condition
 #__git_complete gdt _git_difftool
 
 
@@ -34,9 +34,8 @@ YEL='%Cyellow'
 BLU='%Cblue'
 
 alias glo='git log --pretty=format:"${AUTO}%h \
-  ${GRN}%ad${CLR} %<(15,trunc)%an ${AUTO}%d${CLR} %s" --date=short --graph'
+${GRN}%ad${CLR} %<(15,trunc)%an ${AUTO}%d${CLR} %<(40,trunc)%s" --date=short --graph'
 
+# TODO: Add if condition
 #__git_complete glo _git_log
-
 alias gloa='glo --all'
-
