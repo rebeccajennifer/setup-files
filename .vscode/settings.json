@@ -1,15 +1,18 @@
 {
   "cSpell.words": [
+    "bcompare",
     "crnt",
     "cterm",
     "cursorline",
     "ctermbg",
     "ctermfg",
+    "dircolors",
     "lagomorphic",
     "guibg",
     "guicursor",
     "guifg",
     "Pmenu*",
+    "samd",
     "Stackframe",
     "Statuslineterm"
   ]
