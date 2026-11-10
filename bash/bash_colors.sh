@@ -14,6 +14,10 @@ if [[ -n $TMUX ]]; then
 fi
 #_______________________________________________________________________
 
+#_______________________________________________________________________
+# TODO: Account for MacOS where dircolors isn't a command
+#_______________________________________________________________________
+
 # Allows you to reset LS COLORS completely based on values
 # loaded in the dircolors command
 unset LS_COLORS
@@ -22,7 +26,6 @@ DIR_COLORS_FILE='$STARTUP_FILES/.dircolors'
 
 # Load custom color scheme
 # Assumes $STARTUP_FILES/.dircolors contains color mapping for file types
-if [[ -f $STARTUP_FILES/.dircolors ]]; then
-  #unset DIR_COLORS
+if command -v dircolors >/dev/null 2>&1 && [[ -f "$STARTUP_FILES/.dircolors" ]]; then
   eval `dircolors -b $STARTUP_FILES/.dircolors`
 fi
